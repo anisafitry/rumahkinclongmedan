@@ -4,7 +4,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Sparkles, Wind, Droplets, Leaf } from "lucide-react";
+import ServiceImageCard from "./components/ServiceImageCard";
+import { Phone, Mail, MapPin } from "lucide-react";
+
 
 export default function App() {
   return (
@@ -94,27 +96,57 @@ export default function App() {
       {/* Services */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center mb-12">Layanan Kami</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">
+            Layanan Kami
+          </h3>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service"
-              desc="Pembersihan rumah, kantor, dan ruko secara menyeluruh & profesional."
+              desc={`Layanan pembersihan menyeluruh untuk rumah baru, pasca-renovasi, atau rutin.
+                • Pembersihan lantai (mopping & polishing)
+                • Pembersihan kaca, jendela, dan kusen
+                • Sanitasi kamar mandi (kerak membandel)`}
+              igLink="https://www.instagram.com/jasa_cleaningservicemedan?igsh=amFzczc4Y3BwemQ4"
+              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
             />
+
             <ServiceImageCard
               img="/services/babatrumput.png"
               title="Babat Rumput"
-              desc="Pemotongan rumput halaman agar rapi, bersih, dan enak dipandang."
+              desc={`Transformasi halaman agar rapi dan indah.
+                • Pemotongan rumput liar
+                • Pembersihan sampah hijau
+                • Perapian tanaman pagar`}
+              igLink="https://www.instagram.com/babatrumput_rumahkinclongmedan?igsh=MXF2ejRuZHNoZWxyNg=="
+              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
             />
+
             <ServiceImageCard
               img="/services/cucitoren.png"
               title="Bersihkan Toren"
-              desc="Pembersihan toren air agar higienis dan aman untuk keluarga."
+              desc={`Menjaga air tetap higienis dan aman.
+                • Pembersihan lumut & bakteri
+                • Pembersihan lumpur toren
+                • Pengecekan jalur pipa`}
+              igLink="https://www.instagram.com/cucitoren_rumahkinclongmedan?igsh=MWd2ejZhNmw4MmUxcQ=="
+              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
             />
+
             <ServiceImageCard
               img="/services/cuciac.png"
               title="Cuci AC"
-              desc="Perawatan dan pencucian AC agar dingin maksimal & hemat listrik."
+              desc={`Optimalkan kesejukan & hemat listrik.
+                • Cuci AC Indoor & Outdoor
+                • Tambah freon
+                • Perbaikan & bongkar pasang AC`}
+              igLink="https://www.instagram.com/cuciac_rumahkinclongmedan?igsh=MWlkc3VpMDNpNG02dg=="
+              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
             />
           </div>
         </div>
@@ -123,9 +155,9 @@ export default function App() {
       {/* About */}
       <section id="about" className="py-24">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-6">Tentang RumahKinclongMedan</h3>
+          <h3 className="text-3xl font-bold mb-6">Tentang Rumah Kinclong Medan</h3>
           <p className="text-gray-600 leading-relaxed">
-            RumahKinclongMedan adalah layanan jasa kebersihan profesional di Kota Medan yang hadir sebagai solusi
+            Rumah Kinclong Medan adalah layanan jasa kebersihan profesional di Kota Medan yang hadir sebagai solusi
             untuk menjaga rumah dan lingkungan tetap bersih, sehat, dan nyaman. Kami melayani kebersihan rumah, cuci AC,
             kuras toren, hingga perawatan halaman dengan tenaga kerja terlatih dan berpengalaman, didukung peralatan
             modern serta standar kerja yang rapi dan aman. Kami mengutamakan kualitas layanan, ketepatan waktu, dan kepuasan pelanggan,
@@ -136,17 +168,73 @@ export default function App() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-gradient-to-br from-sky-100 to-emerald-50 py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <section
+        id="contact"
+        className="bg-gradient-to-br from-sky-100 to-emerald-50 py-20"
+      >
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+          {/* LEFT - CONTACT INFO */}
           <div>
             <h3 className="text-3xl font-bold mb-4">Hubungi Kami</h3>
-            <p className="mb-6">Siap melayani Anda setiap hari.</p>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3"><Phone /> 085372726263</li>
-              <li className="flex items-center gap-3"><Mail /> rumahkinclongmedan@gmail.com</li>
-              <li className="flex items-center gap-3"><MapPin /> Medan, Sumatera Utara</li>
+            <p className="mb-8 text-gray-600">
+              Siap melayani Anda setiap hari dengan respon cepat & ramah.
+            </p>
+
+            <ul className="space-y-5 text-gray-700">
+              <li className="flex items-center gap-4">
+                <div className="p-2 rounded-lg bg-green-100">
+                  <Phone className="text-green-600" />
+                </div>
+                <span className="font-medium">085372726263</span>
+              </li>
+
+              <li className="flex items-center gap-4">
+                <div className="p-2 rounded-lg bg-green-100">
+                  <Mail className="text-green-600" />
+                </div>
+                <span className="font-medium">
+                  rumahkinclongmedan@gmail.com
+                </span>
+              </li>
+
+              <li className="flex items-center gap-4">
+                <div className="p-2 rounded-lg bg-green-100">
+                  <MapPin className="text-green-600" />
+                </div>
+                <span className="font-medium">
+                  Medan, Sumatera Utara
+                </span>
+              </li>
             </ul>
           </div>
+
+          {/* RIGHT - MAPS CARD */}
+          <div className="bg-white rounded-3xl shadow-lg border border-green-200 overflow-hidden hover:shadow-xl transition">
+
+            {/* MAP */}
+            <div className="w-full h-[300px]">
+              <iframe
+                title="Lokasi RumahKinclongMedan"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.7936420879605!2d98.77229517349016!3d3.6345253499803483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031343c1d151b0f%3A0x754c4b6abea3403!2sJl.%20Komp.%20Rumah%20Pd.%206%20Blk.%20T%20No.3%2C%20Bandar%20Klippa%2C%20Kec.%20Percut%20Sei%20Tuan%2C%20Kabupaten%20Deli%20Serdang%2C%20Sumatera%20Utara%2020371!5e0!3m2!1sid!2sid!4v1769933255659!5m2!1sid!2sid"
+                className="w-full h-full border-0"
+                loading="lazy"
+              />
+            </div>
+
+            {/* CTA MAP */}
+            <div className="p-4 text-center bg-gray-50">
+              <a
+                href="https://maps.app.goo.gl/M3eujTBkZWvyHkDdA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-green-700 font-semibold hover:underline"
+              >
+                📍 Buka di Google Maps
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -157,23 +245,3 @@ export default function App() {
     </div>
   );
 }
-
-function ServiceImageCard({ img, title, desc }) {
-  return (
-    <motion.div
-      whileHover={{ y: -6 }}
-      className="bg-white p-6 rounded-2xl shadow text-center"
-    >
-      <div className="flex justify-center mb-4">
-        <img
-          src={img}
-          alt={title}
-          className="w-28 h-28 object-contain"
-        />
-      </div>
-      <h4 className="text-xl font-semibold mb-2">{title}</h4>
-      <p className="text-gray-600 text-sm">{desc}</p>
-    </motion.div>
-  );
-}
-
