@@ -67,7 +67,7 @@ export default function App() {
 
                 {/* CTA */}
                 <a
-                  href="https://wa.me/628xxxxxxxxxx"
+                  href="https://wa.me/6285372726263"
                   className="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 transition"
                 >
                   <img src="/whatsapp.png" className="w-5 h-5" />
@@ -142,7 +142,7 @@ export default function App() {
             <h3 className="text-3xl font-bold mb-4">Hubungi Kami</h3>
             <p className="mb-6">Siap melayani Anda setiap hari.</p>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3"><Phone /> 08xxxxxxxxxx</li>
+              <li className="flex items-center gap-3"><Phone /> 085372726263</li>
               <li className="flex items-center gap-3"><Mail /> rumahkinclongmedan@gmail.com</li>
               <li className="flex items-center gap-3"><MapPin /> Medan, Sumatera Utara</li>
             </ul>
