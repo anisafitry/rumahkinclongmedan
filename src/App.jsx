@@ -69,13 +69,17 @@ export default function App() {
                 </p>
 
                 {/* CTA */}
-                <a
+                <motion.a
                   href="https://wa.me/6285372726263"
-                  className="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 transition"
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                  className="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-xl hover:bg-green-700"
                 >
                   <img src="/whatsapp.png" className="w-5 h-5" />
                   Pesan Sekarang via WhatsApp
-                </a>
+                </motion.a>
 
               </div>
 
@@ -203,22 +207,22 @@ export default function App() {
             </ul> <br />
 
             {/* SURAT PERJANJIAN PDF VIEWER */}
-              <h4 className="text-xl font-semibold text-center mb-4 text-gray-800">
-                Surat Perjanjian & Komitmen Mitra
-              </h4>
+            <h4 className="text-xl font-semibold text-center mb-4 text-gray-800">
+              Surat Perjanjian & Komitmen Mitra
+            </h4>
 
-              <div className="w-full h-[600px] border rounded-xl overflow-hidden">
-                <iframe
-                  src="/dokumen/Surat-Perjanjian-Mitra-Rumah-Kinclong-Medan.pdf"
-                  title="Surat Perjanjian Mitra"
-                  className="w-full h-full"
-                />
-              </div>
+            <div className="w-full h-[600px] border rounded-xl overflow-hidden">
+              <iframe
+                src="/dokumen/Surat-Perjanjian-Mitra-Rumah-Kinclong-Medan.pdf"
+                title="Surat Perjanjian Mitra"
+                className="w-full h-full"
+              />
+            </div>
 
-              <p className="text-sm text-gray-500 mt-4 text-center">
-                Silakan baca surat perjanjian dengan seksama sebelum mendaftar sebagai mitra.
-              </p>
-         
+            <p className="text-sm text-gray-500 mt-4 text-center">
+              Silakan baca surat perjanjian dengan seksama sebelum mendaftar sebagai mitra.
+            </p>
+
             {/* DOWNLOAD SURAT */}
             <div className="mt-6">
               <a
@@ -233,12 +237,21 @@ export default function App() {
 
           {/* CTA */}
           <div className="text-center">
-            <a
+            <motion.a
               href="https://docs.google.com/forms/d/1mp21d68a5j70WUnW02tBMz9lE2uR803jUipeXuCUMsM/edit"
+              initial={{ scale: 1 }}
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{
+                duration: 1.2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 transition"
             >
               🤝 Daftar Mitra Sekarang
-            </a>
+            </motion.a>
           </div>
 
         </div>
@@ -320,34 +333,6 @@ export default function App() {
       <footer className="bg-gray-900 text-gray-300 text-center py-6">
         <p>© {new Date().getFullYear()} RumahKinclongMedan. All rights reserved.</p>
       </footer>
-
-      {/* Floating WhatsApp */}
-      <a
-        href="https://wa.me/6285372726263"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 group"
-      >
-        <div className="relative">
-          {/* Pulse animation */}
-          <span className="absolute inset-0 rounded-full bg-green-500 opacity-75 animate-ping"></span>
-
-          {/* Button */}
-          <div className="relative bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition transform hover:scale-110">
-            <img
-              src="/whatsapp.png"
-              alt="WhatsApp"
-              className="w-7 h-7"
-            />
-          </div>
-
-          {/* Tooltip */}
-          <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-green-600 text-white text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-            Chat WhatsApp
-          </span>
-        </div>
-      </a>
-
     </div>
   );
 }
