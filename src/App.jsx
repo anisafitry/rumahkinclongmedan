@@ -201,9 +201,9 @@ export default function App() {
               <li>Scan KTP</li>
               <li>Scan KK</li>
               <li>Scan SIM</li>
-              <li>Scan NPWP (jika ada)</li>
-              <li>Foto diri sambil memegang KTP di depan wajah</li>
-              <li>Foto peralatan cleaning service milik pribadi</li>
+              <li>Scan Ijazah</li>
+              <li>Lamaran Kerja Mitra</li>
+              <li>Surat Perjanjian Mitra</li>
             </ul> <br />
 
             {/* SURAT PERJANJIAN PDF VIEWER */}
