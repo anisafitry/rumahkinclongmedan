@@ -29,6 +29,7 @@ export default function App() {
             <a href="#home" className="hover:text-green-600">Home</a>
             <a href="#services" className="hover:text-green-600">Layanan</a>
             <a href="#about" className="hover:text-green-600">Tentang Kami</a>
+            <a href="#mitra" className="hover:text-green-600">Daftar Mitra</a>
             <a href="#contact" className="hover:text-green-600">Kontak</a>
           </nav>
         </div>
@@ -58,7 +59,7 @@ export default function App() {
                 <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-5">
                   Solusi Rumah <span className="text-green-600">Bersih & Nyaman</span>
                   <br />
-                  di Kota Medan ✨
+                  di Kota Medan
                 </h1>
 
                 {/* DESC (di mockup ada teks kecil) */}
@@ -167,6 +168,82 @@ export default function App() {
         </div>
       </section>
 
+      {/* Daftar Mitra */}
+      <section id="mitra" className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* JUDUL */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold mb-4">
+              Daftar Mitra Rumah Kinclong Medan
+            </h3>
+            <p className="text-gray-600">
+              Bergabunglah sebagai mitra dan dapatkan peluang penghasilan
+              dengan sistem kerja profesional dan transparan.
+            </p>
+          </div>
+
+          {/* SYARAT & KETENTUAN */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-10">
+            <h4 className="text-xl font-semibold mb-4 text-gray-800">
+              Syarat dan Ketentuan Mitra Rumah Kinclong Medan
+            </h4>
+
+            <p className="text-gray-600 mb-4">
+              Calon mitra wajib menyiapkan dan mengunggah dokumen berikut:
+            </p>
+
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Scan KTP</li>
+              <li>Scan KK</li>
+              <li>Scan SIM</li>
+              <li>Scan NPWP (jika ada)</li>
+              <li>Foto diri sambil memegang KTP di depan wajah</li>
+              <li>Foto peralatan cleaning service milik pribadi</li>
+            </ul> <br />
+
+            {/* SURAT PERJANJIAN PDF VIEWER */}
+              <h4 className="text-xl font-semibold text-center mb-4 text-gray-800">
+                Surat Perjanjian & Komitmen Mitra
+              </h4>
+
+              <div className="w-full h-[600px] border rounded-xl overflow-hidden">
+                <iframe
+                  src="/dokumen/Surat-Perjanjian-Mitra-Rumah-Kinclong-Medan.pdf"
+                  title="Surat Perjanjian Mitra"
+                  className="w-full h-full"
+                />
+              </div>
+
+              <p className="text-sm text-gray-500 mt-4 text-center">
+                Silakan baca surat perjanjian dengan seksama sebelum mendaftar sebagai mitra.
+              </p>
+         
+            {/* DOWNLOAD SURAT */}
+            <div className="mt-6">
+              <a
+                href="/dokumen/Surat-Perjanjian-Mitra-Rumah-Kinclong-Medan.pdf"
+                download
+                className="inline-flex items-center gap-2 bg-gray-100 text-green-700 px-5 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+              >
+                📄 Download Surat Perjanjian & Komitmen Mitra
+              </a>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <a
+              href="https://docs.google.com/forms/d/1mp21d68a5j70WUnW02tBMz9lE2uR803jUipeXuCUMsM/edit"
+              className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 transition"
+            >
+              🤝 Daftar Mitra Sekarang
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* Contact */}
       <section
         id="contact"
@@ -178,6 +255,7 @@ export default function App() {
           <div>
             <h3 className="text-3xl font-bold mb-4">Hubungi Kami</h3>
             <p className="mb-8 text-gray-600">
+              Jangan biarkan debu dan kotoran menumpuk. Konsultasikan kebutuhan bersih-bersih rumah, AC, toren, hingga taman Anda secara Gratis!
               Siap melayani Anda setiap hari dengan respon cepat & ramah.
             </p>
 
@@ -242,6 +320,34 @@ export default function App() {
       <footer className="bg-gray-900 text-gray-300 text-center py-6">
         <p>© {new Date().getFullYear()} RumahKinclongMedan. All rights reserved.</p>
       </footer>
+
+      {/* Floating WhatsApp */}
+      <a
+        href="https://wa.me/6285372726263"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 group"
+      >
+        <div className="relative">
+          {/* Pulse animation */}
+          <span className="absolute inset-0 rounded-full bg-green-500 opacity-75 animate-ping"></span>
+
+          {/* Button */}
+          <div className="relative bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition transform hover:scale-110">
+            <img
+              src="/whatsapp.png"
+              alt="WhatsApp"
+              className="w-7 h-7"
+            />
+          </div>
+
+          {/* Tooltip */}
+          <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-green-600 text-white text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+            Chat WhatsApp
+          </span>
+        </div>
+      </a>
+
     </div>
   );
 }
