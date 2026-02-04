@@ -2,41 +2,69 @@
 // Single-file React app (App.jsx) using TailwindCSS
 // Services: Cleaning Service, Babat Rumput, Bersihkan Toren, Cuci AC
 
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ServiceImageCard from "./components/ServiceImageCard";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 
 export default function App() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="font-sans text-gray-800">
       {/* Navbar */}
       <header className="fixed w-full z-50 bg-white shadow">
-        <div className="max-w-7xl mx-8 flex justify-between items-center p-4">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+
+          {/* LOGO */}
           <div className="flex items-center gap-3">
             <img
               src="/logorkm.png"
               alt="Logo Rumah Kinclong Medan"
-              className="h-11 w-auto"
+              className="h-10 w-auto"
             />
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-xl font-bold">
               <span className="text-green-600">RumahKinclong</span>
               <span className="text-gray-800">Medan</span>
             </h1>
           </div>
-          <nav className="space-x-6 hidden md:block">
+
+          {/* MENU DESKTOP */}
+          <nav className="hidden md:flex space-x-6 font-medium">
             <a href="#home" className="hover:text-green-600">Home</a>
             <a href="#services" className="hover:text-green-600">Our Services</a>
             <a href="#about" className="hover:text-green-600">About Us</a>
             <a href="#mitra" className="hover:text-green-600">Daftar Mitra</a>
             <a href="#contact" className="hover:text-green-600">Contact</a>
           </nav>
+
+          {/* HAMBURGER BUTTON */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-gray-700 focus:outline-none"
+          >
+            ☰
+          </button>
         </div>
+
+        {/* MENU MOBILE */}
+        {open && (
+          <div className="md:hidden bg-white border-t shadow-lg">
+            <nav className="flex flex-col px-6 py-4 space-y-4 font-medium">
+              <a onClick={() => setOpen(false)} href="#home">Home</a>
+              <a onClick={() => setOpen(false)} href="#services">Our Services</a>
+              <a onClick={() => setOpen(false)} href="#about">About Us</a>
+              <a onClick={() => setOpen(false)} href="#mitra">Daftar Mitra</a>
+              <a onClick={() => setOpen(false)} href="#contact">Contact</a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* HERO SECTION */}
-      <section id="home" className="bg-gradient-to-br from-sky-100 to-emerald-50 py-20">
+      <section id="home" className="pt-24 bg-gradient-to-br from-sky-100 to-emerald-50 py-20">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* HERO CARD */}
