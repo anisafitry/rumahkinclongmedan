@@ -27,10 +27,10 @@ export default function App() {
           </div>
           <nav className="space-x-6 hidden md:block">
             <a href="#home" className="hover:text-green-600">Home</a>
-            <a href="#services" className="hover:text-green-600">Layanan</a>
-            <a href="#about" className="hover:text-green-600">Tentang Kami</a>
+            <a href="#services" className="hover:text-green-600">Our Services</a>
+            <a href="#about" className="hover:text-green-600">About Us</a>
             <a href="#mitra" className="hover:text-green-600">Daftar Mitra</a>
-            <a href="#contact" className="hover:text-green-600">Kontak</a>
+            <a href="#contact" className="hover:text-green-600">Contact</a>
           </nav>
         </div>
       </header>
@@ -101,18 +101,25 @@ export default function App() {
       {/* Services */}
       <section id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center mb-12">
-            Layanan Kami
-          </h3>
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-center mb-6">
+              Our Services
+            </h3>
+
+            <p className="text-gray-600 mb-4">
+              Kami membagi layanan kami menjadi 4 Divisi Utama untuk memenuhi segala kebutuhan rumah Anda:
+            </p>
+          </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceImageCard
               img="/services/cleaningservice.png"
-              title="Cleaning Service"
-              desc={`Layanan pembersihan menyeluruh untuk rumah baru, pasca-renovasi, atau rutin.
-                • Pembersihan lantai (mopping & polishing)
-                • Pembersihan kaca, jendela, dan kusen
-                • Sanitasi kamar mandi (kerak membandel)`}
+              title="Cleaning Service (Kebersihan Interior)"
+              desc={`Layanan inti kami untuk menciptakan interior yang berkilau.
+                • General Cleaning: Sapu, pel, dusting, rapikan kamar, dan pembersihan kamar mandi harian.
+                • Deep Cleaning: Pembersihan mendetail kerak kamar mandi, noda membandel di dapur, kaca jendela, dan sudut sulit.
+                • Post-Renovation: Pembersihan total sisa cat, semen, dan debu tebal pasca renovasi.
+                • Hydro Vacuum: Sedot tungau dan debu pada kasur, sofa, dan karpet.`}
               igLink="https://www.instagram.com/jasa_cleaningservicemedan?igsh=amFzczc4Y3BwemQ4"
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -120,11 +127,11 @@ export default function App() {
 
             <ServiceImageCard
               img="/services/babatrumput.png"
-              title="Babat Rumput"
-              desc={`Transformasi halaman agar rapi dan indah.
-                • Pemotongan rumput liar
-                • Pembersihan sampah hijau
-                • Perapian tanaman pagar`}
+              title="Gardening (Perawatan Taman & Lahan)"
+              desc={`Halaman yang tidak terawat adalah sarang nyamuk dan hama.
+                • Babat Rumput: Pemotongan rumput liar di halaman rumah atau lahan kosong (kaplingan).
+                • Merapikan Taman: Pemangkasan tanaman hias agar terlihat rapi dan estetik.
+                • Pembersihan Gulma: Mencabut tanaman liar hingga ke akar.`}
               igLink="https://www.instagram.com/babatrumput_rumahkinclongmedan?igsh=MXF2ejRuZHNoZWxyNg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -132,11 +139,11 @@ export default function App() {
 
             <ServiceImageCard
               img="/services/cucitoren.png"
-              title="Bersihkan Toren"
-              desc={`Menjaga air tetap higienis dan aman.
-                • Pembersihan lumut & bakteri
-                • Pembersihan lumpur toren
-                • Pengecekan jalur pipa`}
+              title="Toren Cleaning (Kuras Tangki Air)"
+              desc={`Air bersih adalah kunci kesehatan kulit dan pencernaan keluarga.
+                • Kuras Toren Atas/Bawah: Membersihkan endapan lumpur, lumut, dan pasir di dasar tangki.
+                • Pembersihan Kran Mampet: Melancarkan aliran air yang tersumbat kotoran dari toren.
+                • Direkomendasikan dilakukan rutin setiap 3-6 bulan sekali.`}
               igLink="https://www.instagram.com/cucitoren_rumahkinclongmedan?igsh=MWd2ejZhNmw4MmUxcQ=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -144,11 +151,11 @@ export default function App() {
 
             <ServiceImageCard
               img="/services/cuciac.png"
-              title="Cuci AC"
-              desc={`Optimalkan kesejukan & hemat listrik.
-                • Cuci AC Indoor & Outdoor
-                • Tambah freon
-                • Perbaikan & bongkar pasang AC`}
+              title="AC Maintenance (Perawatan AC)"
+              desc={`Pastikan udara di rumah sejuk dan sehat.
+                • Cuci AC (Split/Cassette): Pembersihan filter dan evaporator agar AC kembali dingin dan hemat listrik.
+                • Isi Freon (R22/R32/R410): Penambahan atau pengisian ulang gas pendingin.
+                • Perbaikan Ringan: Mengatasi AC bocor air, berisik, atau tidak dingin.`}
               igLink="https://www.instagram.com/cuciac_rumahkinclongmedan?igsh=MWlkc3VpMDNpNG02dg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -157,18 +164,105 @@ export default function App() {
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="py-24">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-6">Tentang Rumah Kinclong Medan</h3>
-          <p className="text-gray-600 leading-relaxed">
-            Rumah Kinclong Medan adalah layanan jasa kebersihan profesional di Kota Medan yang hadir sebagai solusi
-            untuk menjaga rumah dan lingkungan tetap bersih, sehat, dan nyaman. Kami melayani kebersihan rumah, cuci AC,
-            kuras toren, hingga perawatan halaman dengan tenaga kerja terlatih dan berpengalaman, didukung peralatan
-            modern serta standar kerja yang rapi dan aman. Kami mengutamakan kualitas layanan, ketepatan waktu, dan kepuasan pelanggan,
-            sehingga setiap pekerjaan dilakukan secara profesional dengan tetap menjaga kebersihan dan keamanan lingkungan demi memberikan
-            hasil terbaik bagi setiap pelanggan.
-          </p>
+      {/* About - Full Width */}
+      <section id="about" className="py-28 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* HEADER */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-6"
+          >
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Tentang <span className="text-green-600">Rumah Kinclong Medan</span>
+            </h3>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Solusi One-Stop Home Maintenance untuk hunian bersih, sehat, dan nyaman di Kota Medan.
+            </p>
+          </motion.div>
+
+          {/* CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gray-50 rounded-3xl p-10 md:p-14 shadow-xl"
+          >
+            {/* ABOUT */}
+            <div className="mb-14">
+              <h4 className="text-2xl font-bold mb-5 text-gray-800">
+                1. About Us
+              </h4>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Rumah Kinclong Medan adalah penyedia jasa perawatan dan kebersihan hunian
+                yang berbasis di Kota Medan. Kami hadir sebagai jawaban atas kebutuhan
+                masyarakat urban yang menginginkan kepraktisan dalam merawat rumah.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Awalnya berfokus pada <strong>General Cleaning</strong>, kini kami berkembang
+                menjadi solusi <strong>One-Stop Home Maintenance</strong>. Kami memahami bahwa
+                rumah yang nyaman bukan hanya soal lantai yang bersih, tetapi juga AC yang dingin,
+                air toren yang higienis, dan halaman yang rapi.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Dengan satu kali panggilan ke <strong>Rumah Kinclong Medan</strong>, seluruh
+                masalah kebersihan rumah Anda dapat teratasi secara profesional.
+              </p>
+
+              <p className="italic font-semibold text-green-700 mt-6">
+                “Dari atap hingga halaman, kami pastikan rumah Anda Kinclong, Sehat, dan Nyaman.”
+              </p>
+            </div>
+
+            {/* VISI & MISI */}
+            <div>
+              <h4 className="text-2xl font-bold mb-6 text-gray-800">
+                2. Visi & Misi
+              </h4>
+
+              {/* VISI */}
+              <div className="mb-6">
+                <h5 className="font-semibold text-lg text-green-700 mb-2">
+                  Visi
+                </h5>
+                <p className="text-gray-700 leading-relaxed">
+                  Menjadi mitra perawatan rumah tangga terpercaya nomor satu di Medan
+                  yang menyediakan layanan terlengkap dengan standar profesional.
+                </p>
+              </div>
+
+              {/* MISI */}
+              <div>
+                <h5 className="font-semibold text-lg text-green-700 mb-3">
+                  Misi
+                </h5>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>
+                    Menyediakan layanan terintegrasi (Cleaning, AC, Toren, dan Taman)
+                    untuk kemudahan pelanggan.
+                  </li>
+                  <li>
+                    Menjamin kebersihan air dan udara di rumah pelanggan demi kesehatan keluarga.
+                  </li>
+                  <li>
+                    Memberikan pelayanan yang cepat, jujur, dan transparan kepada warga Medan.
+                  </li>
+                  <li>
+                    Menggunakan peralatan modern serta teknisi yang kompeten di bidangnya
+                    masing-masing.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </section>
 
@@ -177,11 +271,11 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-6">
 
           {/* JUDUL */}
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">
-              Daftar Mitra Rumah Kinclong Medan
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Daftar Mitra <span className="text-green-600"> Rumah Kinclong Medan </span>
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mx-auto ">
               Bergabunglah sebagai mitra dan dapatkan peluang penghasilan
               dengan sistem kerja profesional dan transparan.
             </p>
@@ -260,51 +354,68 @@ export default function App() {
       {/* Contact */}
       <section
         id="contact"
-        className="bg-gradient-to-br from-sky-100 to-emerald-50 py-20"
+        className="bg-gradient-to-br from-sky-100 to-emerald-50 py-24"
       >
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
 
-          {/* LEFT - CONTACT INFO */}
+          {/* LEFT - INFORMASI PERUSAHAAN */}
           <div>
-            <h3 className="text-3xl font-bold mb-4">Hubungi Kami</h3>
-            <p className="mb-8 text-gray-600">
-              Jangan biarkan debu dan kotoran menumpuk. Konsultasikan kebutuhan bersih-bersih rumah, AC, toren, hingga taman Anda secara Gratis!
-              Siap melayani Anda setiap hari dengan respon cepat & ramah.
-            </p>
+            <h3 className="text-3xl font-extrabold mb-8">
+              Informasi <span className="text-green-600">Perusahaan</span>
+            </h3>
 
-            <ul className="space-y-5 text-gray-700">
-              <li className="flex items-center gap-4">
-                <div className="p-2 rounded-lg bg-green-100">
-                  <Phone className="text-green-600" />
-                </div>
-                <span className="font-medium">085372726263</span>
-              </li>
+            <div className="space-y-4 text-gray-700 text-base">
 
-              <li className="flex items-center gap-4">
-                <div className="p-2 rounded-lg bg-green-100">
-                  <Mail className="text-green-600" />
-                </div>
-                <span className="font-medium">
-                  rumahkinclongmedan@gmail.com
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">Company Profile</span>
+                <span className="col-span-2">: Rumah Kinclong Medan</span>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">WhatsApp</span>
+                <span className="col-span-2">: 085372726263</span>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">Email</span>
+                <span className="col-span-2">: rumahkinclongmedan@gmail.com</span>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">Website</span>
+                <span className="col-span-2">
+                  :{" "}
+                  <a
+                    href="https://rumahkinclongmedan.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 font-medium hover:underline"
+                  >
+                    rumahkinclongmedan.vercel.app
+                  </a>
                 </span>
-              </li>
+              </div>
 
-              <li className="flex items-center gap-4">
-                <div className="p-2 rounded-lg bg-green-100">
-                  <MapPin className="text-green-600" />
-                </div>
-                <span className="font-medium">
-                  Medan, Sumatera Utara
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">Jam Operasional</span>
+                <span className="col-span-2">
+                  : Senin – Minggu (08.00 – 18.00 WIB)
                 </span>
-              </li>
-            </ul>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4">
+                <span className="font-semibold">Wilayah Layanan</span>
+                <span className="col-span-2">: Medan dan sekitarnya</span>
+              </div>
+
+            </div>
           </div>
 
           {/* RIGHT - MAPS CARD */}
           <div className="bg-white rounded-3xl shadow-lg border border-green-200 overflow-hidden hover:shadow-xl transition">
 
             {/* MAP */}
-            <div className="w-full h-[300px]">
+            <div className="w-full h-[320px]">
               <iframe
                 title="Lokasi RumahKinclongMedan"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.7936420879605!2d98.77229517349016!3d3.6345253499803483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031343c1d151b0f%3A0x754c4b6abea3403!2sJl.%20Komp.%20Rumah%20Pd.%206%20Blk.%20T%20No.3%2C%20Bandar%20Klippa%2C%20Kec.%20Percut%20Sei%20Tuan%2C%20Kabupaten%20Deli%20Serdang%2C%20Sumatera%20Utara%2020371!5e0!3m2!1sid!2sid!4v1769933255659!5m2!1sid!2sid"
