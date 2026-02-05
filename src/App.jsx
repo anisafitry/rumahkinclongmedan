@@ -693,8 +693,10 @@ export default function App() {
               value={testimonialForm.name}
               onChange={handleTestimonialChange}
               placeholder="Nama Anda"
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
               required
+              className="w-full p-3 border rounded-lg 
+             text-gray-700 placeholder:text-black
+             focus:ring-2 focus:ring-green-500"
             />
 
             <select
@@ -702,12 +704,18 @@ export default function App() {
               value={testimonialForm.service}
               onChange={handleTestimonialChange}
               required
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
+              className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500
+                ${testimonialForm.service === ""
+                  ? "text-black"
+                  : "text-black"}
+                `}
             >
-              <option value="">Pilih layanan yang digunakan</option>
+              <option value="" disabled>
+                Pilih layanan yang digunakan
+              </option>
 
               {serviceOptions.map((service, index) => (
-                <option key={index} value={service}>
+                <option key={index} value={service} className="text-gray-700">
                   {service}
                 </option>
               ))}
@@ -735,8 +743,10 @@ export default function App() {
               onChange={handleTestimonialChange}
               rows="4"
               placeholder="Tulis pengalaman Anda..."
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
               required
+              className="w-full p-3 border rounded-lg 
+             text-gray-700 placeholder:text-black
+             focus:ring-2 focus:ring-green-500"
             />
 
             <button
