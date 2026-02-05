@@ -3,14 +3,134 @@
 // Services: Cleaning Service, Babat Rumput, Bersihkan Toren, Cuci AC
 
 // import React from "react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ServiceImageCard from "./components/ServiceImageCard";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 
+
 export default function App() {
   const [open, setOpen] = useState(false);
+
+  const [testimonials, setTestimonials] = useState([]);
+  const [testimonialForm, setTestimonialForm] = useState({
+    name: "",
+    service: "",
+    message: "",
+    rating: 0,
+  });
+
+  // Load dari localStorage saat web dibuka
+  useEffect(() => {
+    const saved = localStorage.getItem("rk_testimonials");
+    if (saved) {
+      setTestimonials(JSON.parse(saved));
+    }
+  }, []);
+
+  const handleTestimonialChange = (e) => {
+    setTestimonialForm({
+      ...testimonialForm,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleTestimonialSubmit = (e) => {
+    e.preventDefault();
+
+    if (
+      !testimonialForm.name ||
+      !testimonialForm.message ||
+      testimonialForm.rating === 0 ||
+      !testimonialForm.service
+    ) return;
+
+    const newTestimonial = {
+      id: Date.now(),
+      name: testimonialForm.name,
+      service: testimonialForm.service,
+      message: testimonialForm.message,
+      rating: testimonialForm.rating,
+    };
+
+    const updatedTestimonials = [newTestimonial, ...testimonials];
+
+    setTestimonials(updatedTestimonials);
+    localStorage.setItem(
+      "rk_testimonials",
+      JSON.stringify(updatedTestimonials)
+    );
+
+    setTestimonialForm({
+      name: "",
+      service: "",
+      message: "",
+      rating: 0,
+    });
+  };
+
+  const StarRating = ({ rating, setRating }) => {
+    return (
+      <div className="flex gap-1">
+        {[1, 2, 3, 4, 5].map((star) => (
+          <button
+            key={star}
+            type="button"
+            onClick={() => setRating(star)}
+            className={`text-2xl transition ${star <= rating ? "text-yellow-400" : "text-gray-300"
+              }`}
+          >
+            ★
+          </button>
+        ))}
+      </div>
+    );
+  };
+
+  const serviceOptions = [
+    "Cleaning Rumah",
+    "Cuci AC",
+    "Service AC",
+    "Cuci Toren",
+    "Perawatan Taman",
+  ];
+
+
+  const galleryData = [
+    {
+      title: "Cleaning Service",
+      service: "Cleaning Service",
+      images: [
+        "/gallery/cleaning/cleaning1.jpg",
+        "/gallery/cleaning/cleaning2.jpg",
+      ],
+    },
+    {
+      title: "Gardening & Babat Rumput",
+      service: "Gardening",
+      images: [
+        "/gallery/gardening/garden1.jpg",
+        "/gallery/gardening/garden2.jpg",
+      ],
+    },
+    {
+      title: "Toren Cleaning",
+      service: "Toren Cleaning",
+      images: [
+        "/gallery/toren/toren1.jpg",
+        "/gallery/toren/toren2.jpg",
+      ],
+    },
+    {
+      title: "Cuci & Service AC",
+      service: "AC Maintenance",
+      images: [
+        "/gallery/ac/ac1.jpg",
+        "/gallery/ac/ac2.jpg",
+      ],
+    },
+  ];
 
   return (
     <div className="font-sans text-gray-800">
@@ -36,7 +156,10 @@ export default function App() {
             <a href="#home" className="hover:text-green-600">Home</a>
             <a href="#services" className="hover:text-green-600">Our Services</a>
             <a href="#about" className="hover:text-green-600">About Us</a>
+            <a href="#sop" className="hover:text-green-600">Standar Operasional</a>
+            <a href="#gallery" className="hover:text-green-600">Gallery</a>
             <a href="#mitra" className="hover:text-green-600">Daftar Mitra</a>
+            <a href="#testimoni" className="hover:text-green-600">Testimoni</a>
             <a href="#contact" className="hover:text-green-600">Contact</a>
           </nav>
 
@@ -56,7 +179,10 @@ export default function App() {
               <a onClick={() => setOpen(false)} href="#home">Home</a>
               <a onClick={() => setOpen(false)} href="#services">Our Services</a>
               <a onClick={() => setOpen(false)} href="#about">About Us</a>
+              <a onClick={() => setOpen(false)} href="#sop">Standar Operasional</a>
+              <a onClick={() => setOpen(false)} href="#gallery">Gallery</a>
               <a onClick={() => setOpen(false)} href="#mitra">Daftar Mitra</a>
+              <a onClick={() => setOpen(false)} href="#testimoni">Testimoni</a>
               <a onClick={() => setOpen(false)} href="#contact">Contact</a>
             </nav>
           </div>
@@ -223,7 +349,7 @@ export default function App() {
             {/* ABOUT */}
             <div className="mb-14">
               <h4 className="text-2xl font-bold mb-5 text-gray-800">
-                1. About Us
+                About Us
               </h4>
 
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -252,7 +378,7 @@ export default function App() {
             {/* VISI & MISI */}
             <div>
               <h4 className="text-2xl font-bold mb-6 text-gray-800">
-                2. Visi & Misi
+                Visi & Misi
               </h4>
 
               {/* VISI */}
@@ -261,36 +387,200 @@ export default function App() {
                   Visi
                 </h5>
                 <p className="text-gray-700 leading-relaxed">
-                  Menjadi mitra perawatan rumah tangga terpercaya nomor satu di Medan
-                  yang menyediakan layanan terlengkap dengan standar profesional.
+                  Menjadi standar emas (<em>gold standard</em>) jasa kebersihan profesional di Medan
+                  yang mengedepankan kualitas premium, kejujuran, dan kepuasan pelanggan
+                  yang berkelanjutan.
                 </p>
               </div>
 
               {/* MISI */}
               <div>
-                <h5 className="font-semibold text-lg text-green-700 mb-3">
+                <h5 className="font-semibold text-lg text-green-700 mb-4">
                   Misi
                 </h5>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
+
+                <ul className="space-y-4 text-gray-700 leading-relaxed list-disc list-inside">
+
                   <li>
-                    Menyediakan layanan terintegrasi (Cleaning, AC, Toren, dan Taman)
-                    untuk kemudahan pelanggan.
+                    <span className="font-semibold text-gray-800">
+                      Profesionalisme Teruji
+                    </span>
+                    <p className="mt-1 ml-5">
+                      Menghadirkan tenaga terlatih yang bekerja berdasarkan
+                      SOP (Standard Operating Procedure) yang ketat.
+                    </p>
                   </li>
+
                   <li>
-                    Menjamin kebersihan air dan udara di rumah pelanggan demi kesehatan keluarga.
+                    <span className="font-semibold text-gray-800">
+                      Kualitas Tanpa Kompromi
+                    </span>
+                    <p className="mt-1 ml-5">
+                      Menggunakan peralatan modern serta bahan pembersih
+                      yang aman bagi keluarga dan lingkungan.
+                    </p>
                   </li>
+
                   <li>
-                    Memberikan pelayanan yang cepat, jujur, dan transparan kepada warga Medan.
-                  </li>
-                  <li>
-                    Menggunakan peralatan modern serta teknisi yang kompeten di bidangnya
-                    masing-masing.
+                    <span className="font-semibold text-gray-800">
+                      Kepercayaan Pelanggan
+                    </span>
+                    <p className="mt-1 ml-5">
+                      Membangun hubungan jangka panjang melalui transparansi
+                      hasil kerja dan komunikasi yang santun.
+                    </p>
                   </li>
                 </ul>
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
 
+      {/* SOP */}
+      <section id="sop" className="py-28 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-20">
+
+          {/* HEADER */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Standar Operasional <span className="text-green-600">Prosedur (SOP)</span>
+            </h3>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Kami bekerja berdasarkan SOP yang jelas untuk menjamin kualitas,
+              keamanan, dan kepuasan pelanggan.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+
+            {/* SOP UMUM */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h4 className="text-xl font-bold text-green-700 mb-4">
+                🔰 SOP Umum Sebelum Bekerja
+              </h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Ketuk pintu, beri salam, dan perkenalkan diri sebagai tim Rumah Kinclong Medan.</li>
+                <li>Foto kondisi awal area kerja sebagai dokumentasi.</li>
+                <li>Konfirmasi keluhan pelanggan sebelum pengerjaan.</li>
+                <li>Pasang alas atau pelindung agar rumah tetap bersih.</li>
+              </ul>
+            </div>
+
+            {/* SOP AC */}
+            <details className="bg-white rounded-2xl shadow-lg p-6">
+              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
+                SOP Cuci AC – “Dingin Menggigil”
+              </summary>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                <li>Cek fungsi AC sebelum dibersihkan.</li>
+                <li>Matikan listrik (cabut steker / MCB).</li>
+                <li>Pasang plastik pelindung indoor.</li>
+                <li>Cuci filter, evaporator, dan outdoor.</li>
+                <li>Cek selang pembuangan.</li>
+                <li>Rakit kembali, tes AC, dan foto hasil akhir.</li>
+              </ul>
+            </details>
+
+            {/* SOP TOREN */}
+            <details className="bg-white rounded-2xl shadow-lg p-6">
+              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
+                SOP Cuci Toren – “Air Jernih & Sehat”
+              </summary>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                <li>Matikan pompa dan kuras toren.</li>
+                <li>Sikat dinding dan dasar toren.</li>
+                <li>Bersihkan sudut dan tutup toren.</li>
+                <li>Bilas hingga bersih tanpa sisa sabun.</li>
+                <li>Pastikan pelampung berfungsi normal.</li>
+                <li>Foto kondisi toren setelah bersih.</li>
+              </ul>
+            </details>
+
+            {/* SOP BABAT RUMPUT */}
+            <details className="bg-white rounded-2xl shadow-lg p-6">
+              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
+                SOP Babat Rumput – “Halaman Paten”
+              </summary>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                <li>Cek dan bersihkan area dari benda keras.</li>
+                <li>Potong rumput dengan tinggi rata.</li>
+                <li>Rapikan tepi taman dan pot.</li>
+                <li>Kumpulkan dan ikat sisa rumput.</li>
+              </ul>
+            </details>
+
+            {/* SOP CLEANING */}
+            <details className="bg-white rounded-2xl shadow-lg p-6">
+              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
+                SOP Cleaning Service – “Kinclong Maksimal”
+              </summary>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                <li>Bersihkan dari atas ke bawah.</li>
+                <li>Detail sela keramik dan kerak air.</li>
+                <li>Pastikan kaca bebas bercak.</li>
+                <li>Tambahkan pengharum ruangan.</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section id="gallery" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-28">
+
+          {/* HEADER */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Gallery <span className="text-green-600">Pekerjaan Kami</span>
+            </h3>
+            <p className="text-gray-600">
+              Dokumentasi hasil kerja dari berbagai layanan Rumah Kinclong Medan
+            </p>
+          </div>
+
+          {/* GALLERY PER SERVICE */}
+          {/* CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gray-50 rounded-3xl p-10 md:p-14 shadow-xl"
+          >
+            <div className="space-y-16">
+              {galleryData.map((section, index) => (
+                <div key={index}>
+                  {/* TITLE */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <h4 className="text-2xl font-bold text-gray-800">
+                      {section.title}
+                    </h4>
+                    <span className="px-3 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full">
+                      {section.service}
+                    </span>
+                  </div>
+
+                  {/* GRID IMAGE */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    {section.images.map((img, i) => (
+                      <div
+                        key={i}
+                        className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition"
+                      >
+                        <img
+                          src={img}
+                          alt={section.title}
+                          className="w-full h-40 object-cover hover:scale-110 transition duration-500 cursor-pointer"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -374,6 +664,129 @@ export default function App() {
             >
               🤝 Daftar Mitra Sekarang
             </motion.a>
+          </div>
+
+        </div>
+      </section>
+
+      {/* TESTIMONI */}
+      <section id="testimoni" className="py-28 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Testimoni <span className="text-green-600">Pelanggan</span>
+            </h3>
+            <p className="text-gray-600">
+              Apa kata pelanggan tentang layanan Rumah Kinclong Medan
+            </p>
+          </div>
+
+          {/* FORM */}
+          <form
+            onSubmit={handleTestimonialSubmit}
+            className="bg-white rounded-3xl shadow-lg p-8 mb-12 space-y-4"
+          >
+            <input
+              type="text"
+              name="name"
+              value={testimonialForm.name}
+              onChange={handleTestimonialChange}
+              placeholder="Nama Anda"
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
+              required
+            />
+
+            <select
+              name="service"
+              value={testimonialForm.service}
+              onChange={handleTestimonialChange}
+              required
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
+            >
+              <option value="">Pilih layanan yang digunakan</option>
+
+              {serviceOptions.map((service, index) => (
+                <option key={index} value={service}>
+                  {service}
+                </option>
+              ))}
+            </select>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Rating Layanan
+              </label>
+
+              <StarRating
+                rating={testimonialForm.rating}
+                setRating={(value) =>
+                  setTestimonialForm({
+                    ...testimonialForm,
+                    rating: value,
+                  })
+                }
+              />
+            </div>
+
+            <textarea
+              name="message"
+              value={testimonialForm.message}
+              onChange={handleTestimonialChange}
+              rows="4"
+              placeholder="Tulis pengalaman Anda..."
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
+              required
+            />
+
+            <button
+              type="submit"
+              className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+            >
+              Kirim Testimoni
+            </button>
+          </form>
+
+          {/* LIST */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {testimonials.length === 0 && (
+              <p className="text-center text-gray-500 col-span-full">
+                Belum ada testimoni.
+              </p>
+            )}
+
+            {testimonials.map((item) => (
+              <div key={item.id} className="relative bg-white rounded-2xl shadow-md p-6 border-l-4 border-green-600">
+
+                <div className="font-semibold text-lg text-gray-800">
+                  {item.name}
+                </div>
+
+                {/* ROLE / LAYANAN */}
+                {item.service && (
+                  <span className="text-sm text-green-600 font-medium">
+                    {item.service}
+                  </span>
+                )}
+
+                <div className="flex mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <span
+                      key={i}
+                      className={`text-lg ${i < item.rating ? "text-yellow-400" : "text-gray-300"
+                        }`}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
+
+                {/* PESAN */}
+                <p className="italic text-gray-600 leading-relaxed">
+                  “{item.message}”
+                </p>
+              </div>
+            ))}
           </div>
 
         </div>
