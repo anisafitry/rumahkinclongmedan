@@ -635,13 +635,40 @@ export default function App() {
             </p>
 
             {/* DOWNLOAD SURAT */}
-            <div className="mt-6">
+            <div className="mt-8 flex flex-col sm:flex-row sm:justify-between gap-4">
               <a
                 href="/dokumen/Surat-Perjanjian-Mitra-Rumah-Kinclong-Medan.pdf"
                 download
-                className="inline-flex items-center gap-2 bg-gray-100 text-green-700 px-5 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2
+                bg-gradient-to-r from-green-600 to-emerald-600
+                text-white
+                px-6 py-3 rounded-2xl
+                font-semibold text-sm
+                shadow-lg
+                hover:scale-[1.02]
+                hover:shadow-xl
+                transition-all duration-200"
               >
                 📄 Download Surat Perjanjian & Komitmen Mitra
+              </a>
+
+              {/* SERVICE REPORT MITRA */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfk0BOXm2Phs5cJ76ecsbFPqAC8hqV87J0cVK6NJj7q-T3Q_w/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2
+                bg-gradient-to-r from-green-600 to-emerald-600
+                text-white
+                px-6 py-3 rounded-2xl
+                font-semibold text-sm
+                shadow-lg
+                hover:scale-[1.02]
+                hover:shadow-xl
+                transition-all duration-200"
+              >
+                📝 Professional Service Report Mitra
               </a>
             </div>
           </div>
