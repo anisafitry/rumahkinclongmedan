@@ -89,11 +89,10 @@ export default function App() {
   };
 
   const serviceOptions = [
-    "Cleaning Rumah",
-    "Cuci AC",
-    "Service AC",
-    "Cuci Toren",
-    "Perawatan Taman",
+    "Cleaning Service (Kebersihan Interior)",
+    "Gardening (Perawatan Taman & Lahan)",
+    "Toren Cleaning (Kuras Tangki Air)",
+    "AC Maintenance (Perawatan AC)",
   ];
 
 
@@ -107,7 +106,7 @@ export default function App() {
       ],
     },
     {
-      title: "Gardening & Babat Rumput",
+      title: "Gardening",
       service: "Gardening",
       images: [
         "/gallery/gardening/garden1.jpg",
@@ -123,7 +122,7 @@ export default function App() {
       ],
     },
     {
-      title: "Cuci & Service AC",
+      title: "AC Maintenance",
       service: "AC Maintenance",
       images: [
         "/gallery/ac/ac1.jpg",
@@ -467,25 +466,36 @@ export default function App() {
               </ul>
             </div>
 
-            {/* SOP AC */}
+            {/* SOP CLEANING */}
             <details className="bg-white rounded-2xl shadow-lg p-6">
               <summary className="cursor-pointer text-xl font-semibold text-gray-800">
-                SOP Cuci AC – “Dingin Menggigil”
+                SOP Cleaning Service – “Kinclong Maksimal”
               </summary>
               <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-                <li>Cek fungsi AC sebelum dibersihkan.</li>
-                <li>Matikan listrik (cabut steker / MCB).</li>
-                <li>Pasang plastik pelindung indoor.</li>
-                <li>Cuci filter, evaporator, dan outdoor.</li>
-                <li>Cek selang pembuangan.</li>
-                <li>Rakit kembali, tes AC, dan foto hasil akhir.</li>
+                <li>Bersihkan dari atas ke bawah.</li>
+                <li>Detail sela keramik dan kerak air.</li>
+                <li>Pastikan kaca bebas bercak.</li>
+                <li>Tambahkan pengharum ruangan.</li>
+              </ul>
+            </details>
+
+            {/* SOP GARDENING */}
+            <details className="bg-white rounded-2xl shadow-lg p-6">
+              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
+                SOP Gardening – “Halaman Paten”
+              </summary>
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                <li>Cek dan bersihkan area dari benda keras.</li>
+                <li>Potong rumput dengan tinggi rata.</li>
+                <li>Rapikan tepi taman dan pot.</li>
+                <li>Kumpulkan dan ikat sisa rumput.</li>
               </ul>
             </details>
 
             {/* SOP TOREN */}
             <details className="bg-white rounded-2xl shadow-lg p-6">
               <summary className="cursor-pointer text-xl font-semibold text-gray-800">
-                SOP Cuci Toren – “Air Jernih & Sehat”
+                SOP Toren Cleaning – “Air Jernih & Sehat”
               </summary>
               <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
                 <li>Matikan pompa dan kuras toren.</li>
@@ -497,29 +507,18 @@ export default function App() {
               </ul>
             </details>
 
-            {/* SOP BABAT RUMPUT */}
+            {/* SOP AC */}
             <details className="bg-white rounded-2xl shadow-lg p-6">
               <summary className="cursor-pointer text-xl font-semibold text-gray-800">
-                SOP Babat Rumput – “Halaman Paten”
+                SOP AC Maintenance – “Dingin Menggigil”
               </summary>
               <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-                <li>Cek dan bersihkan area dari benda keras.</li>
-                <li>Potong rumput dengan tinggi rata.</li>
-                <li>Rapikan tepi taman dan pot.</li>
-                <li>Kumpulkan dan ikat sisa rumput.</li>
-              </ul>
-            </details>
-
-            {/* SOP CLEANING */}
-            <details className="bg-white rounded-2xl shadow-lg p-6">
-              <summary className="cursor-pointer text-xl font-semibold text-gray-800">
-                SOP Cleaning Service – “Kinclong Maksimal”
-              </summary>
-              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-                <li>Bersihkan dari atas ke bawah.</li>
-                <li>Detail sela keramik dan kerak air.</li>
-                <li>Pastikan kaca bebas bercak.</li>
-                <li>Tambahkan pengharum ruangan.</li>
+                <li>Cek fungsi AC sebelum dibersihkan.</li>
+                <li>Matikan listrik (cabut steker / MCB).</li>
+                <li>Pasang plastik pelindung indoor.</li>
+                <li>Cuci filter, evaporator, dan outdoor.</li>
+                <li>Cek selang pembuangan.</li>
+                <li>Rakit kembali, tes AC, dan foto hasil akhir.</li>
               </ul>
             </details>
           </div>
