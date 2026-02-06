@@ -624,7 +624,7 @@ export default function App() {
 
             <div className="w-full h-[600px] border rounded-xl overflow-hidden">
               <iframe
-                src="/dokumen/Surat-Kerja-Sama-Mitra.pdf"
+                src="/dokumen/Perjanjian Mitra.pdf"
                 title="Surat Perjanjian Mitra"
                 className="w-full h-full"
               />
@@ -637,7 +637,7 @@ export default function App() {
             {/* DOWNLOAD SURAT */}
             <div className="mt-8 flex flex-col sm:flex-row sm:justify-between gap-4">
               <a
-                href="/dokumen/Surat-Kerja-Sama-Mitra.pdf"
+                href="/dokumen/Perjanjian Mitra.pdf"
                 download
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2
