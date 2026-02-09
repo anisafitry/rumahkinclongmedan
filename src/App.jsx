@@ -624,7 +624,7 @@ export default function App() {
 
             <div className="w-full h-[600px] border rounded-xl overflow-hidden">
               <iframe
-                src="/dokumen/SURAT PERJANJIAN2.pdf"
+                src="/dokumen/Surat Perjanjian Kerja Sama Mitra Rumah Kinclong Medan.pdf"
                 title="Surat Perjanjian Mitra"
                 className="w-full h-full"
               />
@@ -637,7 +637,7 @@ export default function App() {
             {/* DOWNLOAD SURAT */}
             <div className="mt-8 flex flex-col sm:flex-row sm:justify-between gap-4">
               <a
-                href="/dokumen/SURAT PERJANJIAN2.pdf"
+                href="/dokumen/Surat Perjanjian Kerja Sama Mitra Rumah Kinclong Medan.pdf"
                 download
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2
