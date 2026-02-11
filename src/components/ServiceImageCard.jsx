@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 
 
 export default function ServiceImageCard({
@@ -10,6 +10,7 @@ export default function ServiceImageCard({
     igLink,
     fbLink,
     tiktokLink,
+    youtubeLink,
 }) {
     const [open, setOpen] = useState(false);
 
@@ -55,6 +56,12 @@ export default function ServiceImageCard({
                     {tiktokLink && (
                         <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
                             <FaTiktok className="text-xl hover:text-black transition" />
+                        </a>
+                    )}
+
+                    {youtubeLink && (
+                        <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
+                            <FaYoutube className="text-xl hover:text-black transition" />
                         </a>
                     )}
                 </div>

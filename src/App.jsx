@@ -276,6 +276,7 @@ export default function App() {
               igLink="https://www.instagram.com/jasa_cleaningservicemedan?igsh=amFzczc4Y3BwemQ4"
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
@@ -288,6 +289,7 @@ export default function App() {
               igLink="https://www.instagram.com/babatrumput_rumahkinclongmedan?igsh=MXF2ejRuZHNoZWxyNg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
@@ -300,6 +302,7 @@ export default function App() {
               igLink="https://www.instagram.com/cucitoren_rumahkinclongmedan?igsh=MWd2ejZhNmw4MmUxcQ=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
@@ -312,6 +315,7 @@ export default function App() {
               igLink="https://www.instagram.com/cuciac_rumahkinclongmedan?igsh=MWlkc3VpMDNpNG02dg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
           </div>
         </div>
@@ -669,6 +673,24 @@ export default function App() {
                 transition-all duration-200"
               >
                 📝 Professional Service Report Mitra
+              </a>
+
+              {/* SERVICE REPORT MITRA */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScnWleuMgItHPo_UdLhPAu7_XIr54EhshjLYx9DGsPxEjqXjQ/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2
+                bg-gradient-to-r from-green-600 to-emerald-600
+                text-white
+                px-6 py-3 rounded-2xl
+                font-semibold text-sm
+                shadow-lg
+                hover:scale-[1.02]
+                hover:shadow-xl
+                transition-all duration-200"
+              >
+                📝 Ceklist Peminjaman Alat
               </a>
             </div>
           </div>
