@@ -145,8 +145,8 @@ export default function App() {
               className="h-10 w-auto"
             />
             <h1 className="text-xl font-bold">
-              <span className="text-green-600">RumahKinclong</span>
-              <span className="text-gray-800">Medan</span>
+              <span className="text-green-600">Rumah Kinclong</span>
+              <span className="text-gray-800"> Medan</span>
             </h1>
           </div>
 
@@ -356,9 +356,9 @@ export default function App() {
               </h4>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Rumah Kinclong Medan adalah penyedia jasa perawatan dan kebersihan hunian
-                yang berbasis di Kota Medan. Kami hadir sebagai jawaban atas kebutuhan
-                masyarakat urban yang menginginkan kepraktisan dalam merawat rumah.
+                Rumah Kinclong Medan Rumah Kinclong Medan, Layanan pembersih secara detail dan menyeluruh. 
+                Efektif untuk pembersihan rumah dan kantor. Cleaning Service, Gardening, Toren Cleaning, 
+                And AC Maintenance yang berada dikota Medan dan sekitarnya.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -374,7 +374,7 @@ export default function App() {
               </p>
 
               <p className="italic font-semibold text-green-700 mt-6">
-                “Dari atap hingga halaman, kami pastikan rumah Anda Kinclong, Sehat, dan Nyaman.”
+                “Dari atap hingga halaman, kami pastikan rumah Anda Kinclong, Sehat, dan Nyaman. Layanan dari Hati [Service With Heart].”
               </p>
             </div>
 
@@ -628,7 +628,7 @@ export default function App() {
 
             <div className="w-full h-[600px] border rounded-xl overflow-hidden">
               <iframe
-                src="/dokumen/Surat Perjanjian Kerja Sama Mitra Rumah Kinclong Medan.pdf"
+                src="/dokumen/SURAT PERJANJIAN KERJA SAMA MITRA RUMAH_KINCLONG_MEDAN.pdf"
                 title="Surat Perjanjian Mitra"
                 className="w-full h-full"
               />
@@ -641,7 +641,7 @@ export default function App() {
             {/* DOWNLOAD SURAT */}
             <div className="mt-8 flex flex-col sm:flex-row sm:justify-between gap-4">
               <a
-                href="/dokumen/Surat Perjanjian Kerja Sama Mitra Rumah Kinclong Medan.pdf"
+                href="/dokumen/SURAT PERJANJIAN KERJA SAMA MITRA RUMAH_KINCLONG_MEDAN.pdf"
                 download
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2
@@ -654,7 +654,7 @@ export default function App() {
                 hover:shadow-xl
                 transition-all duration-200"
               >
-                📄 Download Surat Perjanjian & Komitmen Mitra
+                📝 Surat Perjanjian & Komitmen Mitra
               </a>
 
               {/* SERVICE REPORT MITRA */}
@@ -690,7 +690,7 @@ export default function App() {
                 hover:shadow-xl
                 transition-all duration-200"
               >
-                📝 Ceklist Peminjaman Alat
+                📝 Ceklist Peminjaman Alat Mitra
               </a>
             </div>
           </div>
