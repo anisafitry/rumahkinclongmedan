@@ -40,30 +40,56 @@ export default function ServiceImageCard({
                 </button>
 
                 {/* SOCIAL ICONS */}
-                <div className="flex justify-center gap-4 text-gray-600">
+                <div className="flex justify-center gap-4 mt-5">
+
                     {igLink && (
                         <a href={igLink} target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="text-xl hover:text-pink-500 transition" />
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
+                      bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600
+                      shadow-md transition duration-300
+                      hover:scale-110 hover:-translate-y-1 
+                      hover:shadow-[0_0_20px_#E1306C] cursor-pointer">
+                                <FaInstagram className="text-white text-lg" />
+                            </div>
                         </a>
                     )}
 
                     {fbLink && (
                         <a href={fbLink} target="_blank" rel="noopener noreferrer">
-                            <FaFacebook className="text-xl hover:text-blue-600 transition" />
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
+                      bg-[#1877F2]
+                      shadow-md transition duration-300
+                      hover:scale-110 hover:-translate-y-1 
+                      hover:shadow-[0_0_20px_#1877F2] cursor-pointer">
+                                <FaFacebook className="text-white text-lg" />
+                            </div>
                         </a>
                     )}
 
                     {tiktokLink && (
                         <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
-                            <FaTiktok className="text-xl hover:text-black transition" />
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
+                      bg-black
+                      shadow-md transition duration-300
+                      hover:scale-110 hover:-translate-y-1 
+                      hover:shadow-[0_0_20px_#000] cursor-pointer">
+                                <FaTiktok className="text-white text-lg" />
+                            </div>
                         </a>
                     )}
 
                     {youtubeLink && (
                         <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
-                            <FaYoutube className="text-xl hover:text-black transition" />
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full 
+                      bg-[#FF0000]
+                      shadow-md transition duration-300
+                      hover:scale-110 hover:-translate-y-1 
+                      hover:shadow-[0_0_20px_#FF0000] cursor-pointer">
+                                <FaYoutube className="text-white text-lg" />
+                            </div>
                         </a>
                     )}
+
                 </div>
             </motion.div>
 
