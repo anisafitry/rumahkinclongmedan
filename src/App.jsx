@@ -356,7 +356,7 @@ export default function App() {
               </h4>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Rumah Kinclong Medan Rumah Kinclong Medan, Layanan pembersih secara detail dan menyeluruh. 
+                Rumah Kinclong Medan, Layanan pembersih secara detail dan menyeluruh. 
                 Efektif untuk pembersihan rumah dan kantor. Cleaning Service, Gardening, Toren Cleaning, 
                 And AC Maintenance yang berada dikota Medan dan sekitarnya.
               </p>
