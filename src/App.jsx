@@ -9,7 +9,6 @@ import ServiceImageCard from "./components/ServiceImageCard";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 
-
 export default function App() {
   const [open, setOpen] = useState(false);
 
@@ -131,6 +130,101 @@ export default function App() {
     },
   ];
 
+  const faqData = [
+    // CLEANING SERVICE
+    {
+      category: "Jasa Cleaning Service (General & Deep Cleaning)",
+      question: "Apa bedanya General Cleaning dan Deep Cleaning?",
+      answer: (
+        <>
+          <p className="mb-3">
+            <span className="font-semibold text-gray-800">General Cleaning:</span>
+            {" "}Pembersihan rutin harian seperti sapu, pel, lap kaca, cuci piring,
+            dan pembersihan kamar mandi standar.
+          </p>
+          <p>
+            <span className="font-semibold text-gray-800">Deep Cleaning:</span>
+            {" "}Pembersihan menyeluruh untuk rumah lama kosong, pasca renovasi,
+            atau pasca banjir. Termasuk pembersihan kerak kamar mandi membandel
+            serta detail hingga ke sela-sela terkecil.
+          </p>
+        </>
+      )
+    },
+    {
+      category: "Jasa Cleaning Service (General & Deep Cleaning)",
+      question: "Berapa lama waktu pengerjaannya?",
+      answer:
+        "Durasi pengerjaan tergantung luas bangunan dan kondisi rumah. Untuk rumah standar tipe 36/45, biasanya memakan waktu 3–5 jam dengan 2–3 personil profesional."
+    },
+    {
+      category: "Jasa Cleaning Service (General & Deep Cleaning)",
+      question: "Apakah furniture saya aman dari cairan kimia?",
+      answer:
+        "Ya. Kami menggunakan cairan pembersih khusus yang disesuaikan dengan material permukaan (kayu, keramik, maupun kulit) sehingga tidak merusak tekstur atau warna."
+    },
+
+    // CUCI AC
+    {
+      category: "Jasa Cuci AC (Air Conditioner)",
+      question: "Kapan saya harus cuci AC?",
+      answer:
+        "Idealnya setiap 3–4 bulan sekali untuk menjaga kualitas udara tetap bersih serta mencegah AC menjadi boros listrik atau cepat rusak."
+    },
+    {
+      category: "Jasa Cuci AC (Air Conditioner)",
+      question: "Apakah pengerjaannya berantakan atau menciprat ke tembok?",
+      answer:
+        "Tidak. Tim kami menggunakan plastik pelindung (cover AC) khusus sehingga air sisa pencucian langsung mengalir ke wadah tanpa mengenai dinding atau lantai."
+    },
+    {
+      category: "Jasa Cuci AC (Air Conditioner)",
+      question: "Bagaimana jika AC tetap tidak dingin setelah dicuci?",
+      answer:
+        "Teknisi kami akan mengecek tekanan freon dan kondisi kompresor. Jika terdapat kerusakan komponen, kami akan menginformasikan terlebih dahulu sebelum melakukan perbaikan (biaya perbaikan terpisah dari layanan cuci)."
+    },
+
+    // KURAS TOREN
+    {
+      category: "Jasa Kuras Toren (Tangki Air)",
+      question: "Mengapa toren harus dikuras rutin?",
+      answer:
+        "Toren air sering mengalami penumpukan lumut dan endapan lumpur yang dapat menyumbat pipa serta menjadi sarang bakteri. Pembersihan rutin membantu menjaga kualitas air tetap higienis."
+    },
+    {
+      category: "Jasa Kuras Toren (Tangki Air)",
+      question: "Apakah bagian dalam toren benar-benar disikat?",
+      answer:
+        "Ya. Kami menguras air hingga habis, menyikat dinding bagian dalam sampai bersih dari lumut, lalu melakukan pembilasan hingga air benar-benar jernih sebelum diisi kembali."
+    },
+    {
+      category: "Jasa Kuras Toren (Tangki Air)",
+      question: "Bisa sekalian pasang otomatis (radar) toren?",
+      answer:
+        "Bisa. Silakan informasikan kepada admin saat melakukan booking jika ingin penambahan pemasangan atau penggantian pelampung/radar air."
+    },
+
+    // BABAT RUMPUT
+    {
+      category: "Jasa Babat Rumput (Garden Maintenance)",
+      question: "Pakai alat apa untuk babat rumput?",
+      answer:
+        "Kami menggunakan mesin babat rumput gendong (potong cepat & rapi) atau mesin dorong, tergantung luas dan kondisi lahan."
+    },
+    {
+      category: "Jasa Babat Rumput (Garden Maintenance)",
+      question: "Apakah sampah rumput langsung dibersihkan?",
+      answer:
+        "Ya. Layanan sudah termasuk pengumpulan rumput ke dalam karpet atau plastik sampah. Pembuangan ke luar area rumah bersifat opsional sesuai kesepakatan."
+    },
+    {
+      category: "Jasa Babat Rumput (Garden Maintenance)",
+      question: "Bisa sekaligus merapikan tanaman atau tebang pohon kecil?",
+      answer:
+        "Bisa. Kami melayani perapian tanaman hias serta penebangan pohon kecil hingga sedang dengan biaya tambahan sesuai tingkat kesulitan."
+    }
+  ];
+
   return (
     <div className="font-sans text-gray-800">
       {/* Navbar */}
@@ -159,6 +253,7 @@ export default function App() {
             <a href="#gallery" className="hover:text-green-600">Gallery</a>
             <a href="#mitra" className="hover:text-green-600">Daftar Mitra</a>
             <a href="#testimoni" className="hover:text-green-600">Testimoni</a>
+            <a href="#faq" className="hover:text-green-600">FAQ</a>
             <a href="#contact" className="hover:text-green-600">Contact</a>
           </nav>
 
@@ -182,6 +277,7 @@ export default function App() {
               <a onClick={() => setOpen(false)} href="#gallery">Gallery</a>
               <a onClick={() => setOpen(false)} href="#mitra">Daftar Mitra</a>
               <a onClick={() => setOpen(false)} href="#testimoni">Testimoni</a>
+              <a onClick={() => setOpen(false)} href="#faq">FAQ</a>
               <a onClick={() => setOpen(false)} href="#contact">Contact</a>
             </nav>
           </div>
@@ -239,9 +335,9 @@ export default function App() {
               {/* IMAGE */}
               <div className="flex justify-center md:justify-end">
                 <img
-                  src="/hero-cleaner.png"
+                  src="/logo1.jpeg"
                   alt="Jasa Kebersihan Rumah Medan"
-                  className="w-full max-w-lg drop-shadow-2xl"
+                  className="w-full max-w-lg drop-shadow-2xl rounded-2xl"
                 />
               </div>
 
@@ -268,11 +364,95 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              desc={`Layanan inti kami untuk menciptakan interior yang berkilau.
-                • General Cleaning: Sapu, pel, dusting, rapikan kamar, dan pembersihan kamar mandi harian.
-                • Deep Cleaning: Pembersihan mendetail kerak kamar mandi, noda membandel di dapur, kaca jendela, dan sudut sulit.
-                • Post-Renovation: Pembersihan total sisa cat, semen, dan debu tebal pasca renovasi.
-                • Hydro Vacuum: Sedot tungau dan debu pada kasur, sofa, dan karpet.`}
+              intro="Rumah Kinclong Medan hadir sebagai solusi kebersihan terbaik untuk Anda 
+              yang berdomisili di Medan dan sekitarnya. Kami menyediakan berbagai pilihan layanan cleaning service 
+              yang dapat disesuaikan dengan kebutuhan rumah, kantor, atau bangunan komersial. Dengan tim profesional 
+              dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal."
+              services={[
+                {
+                  name: "Daily Cleaning",
+                  price: "Rp 250.000 – 400.000",
+                  duration: "2 – 3 jam kerja",
+                  team: "1 – 2 orang",
+                  items: [
+                    "Sapu & pel seluruh lantai",
+                    "Lap debu meja, lemari & perabot",
+                    "Bersihkan kamar mandi ringan",
+                    "Rapikan tempat tidur & ruangan",
+                    "Buang sampah & ganti plastik",
+                  ],
+                  terms: [
+                    "Tidak termasuk pembersihan kerak membandel",
+                    "Tidak termasuk cuci sofa/kasur",
+                    "Tidak termasuk bongkar pasang furniture",
+                    "Area maksimal rumah tipe 36–70",
+                    "Tambahan area dikenakan biaya tambahan"
+                  ]
+                },
+                {
+                  name: "General Cleaning",
+                  price: "Rp 300.000 – 600.000",
+                  duration: "3 – 4 jam kerja",
+                  team: "2 orang",
+                  items: [
+                    "Sapu, pel & vacuum lantai",
+                    "Lap debu detail furniture",
+                    "Pembersihan kamar mandi menyeluruh",
+                    "Bersihkan dapur & kompor ringan",
+                    "Lap kaca bagian dalam",
+                    "Bersihkan kipas angin & ventilasi"
+                  ],
+                  terms: [
+                    "Tidak termasuk pembersihan kerak berat",
+                    "Tidak termasuk cuci sofa/kasur (Hydro Vacuum)",
+                    "Tidak termasuk pembersihan pasca renovasi",
+                    "Listrik & air disediakan oleh pelanggan",
+                    "Area di luar standar dikenakan biaya tambahan"
+                  ]
+                },
+                {
+                  name: "Deep Cleaning",
+                  price: "Rp 800.000 – 1.800.000",
+                  duration: "5 – 8 jam kerja",
+                  team: "3 – 4 orang",
+                  items: [
+                    "Pembersihan kerak kamar mandi berat",
+                    "Bersihkan noda membandel dapur",
+                    "Cuci & lap kaca dalam/luar (akses aman)",
+                    "Bersihkan sela keramik & nat",
+                    "Bersihkan plafon & sudut langit-langit",
+                    "Vacuum kasur & sofa ringan",
+                    "Pembersihan detail sudut sulit"
+                  ],
+                  terms: [
+                    "Harga menyesuaikan luas & tingkat kekotoran",
+                    "Akses listrik & air wajib tersedia",
+                    "Tidak termasuk pekerjaan renovasi",
+                    "Tidak termasuk pembersihan limbah berbahaya",
+                    "Survey gratis untuk area besar"
+                  ]
+                },
+                {
+                  name: "Post Renovation",
+                  items: [
+                    "Sisa cat & semen",
+                    "Debu tebal pasca renovasi"
+                  ]
+                },
+                {
+                  name: "Syarat & Ketentuan Umum",
+                  items: [
+                    "Harga menyesuaikan luas area dan tingkat kekotoran",
+                    "Durasi pengerjaan dapat berubah sesuai kondisi lapangan",
+                    "Pelanggan wajib menyediakan akses listrik dan air",
+                    "Area kerja harus dalam kondisi aman dan bebas hewan berbahaya",
+                    "Barang berharga disarankan diamankan sebelum pengerjaan",
+                    "Pembatalan mendadak (hari-H) dikenakan biaya transport",
+                    "Penambahan layanan di lokasi akan dikenakan biaya tambahan",
+                    "Pemesanan resmi hanya melalui admin Rumah Kinclong Medan"
+                  ]
+                }
+              ]}
               igLink="https://www.instagram.com/jasa_cleaningservicemedan?igsh=amFzczc4Y3BwemQ4"
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -282,10 +462,63 @@ export default function App() {
             <ServiceImageCard
               img="/services/babatrumput.png"
               title="Gardening (Perawatan Taman & Lahan)"
-              desc={`Halaman yang tidak terawat adalah sarang nyamuk dan hama.
-                • Babat Rumput: Pemotongan rumput liar di halaman rumah atau lahan kosong (kaplingan).
-                • Merapikan Taman: Pemangkasan tanaman hias agar terlihat rapi dan estetik.
-                • Pembersihan Gulma: Mencabut tanaman liar hingga ke akar.`}
+              intro={`Rumah Kinclong Medan menghadirkan layanan Gardening profesional untuk menjaga taman dan lahan Anda tetap rapi, bersih, dan sehat. 
+              Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada tim kami yang berpengalaman.`}
+              services={[
+                {
+                  name: "Routine Garden Maintenance",
+                  price: "Mulai Rp 250.000 / kunjungan",
+                  duration: "2–3 jam",
+                  team: "1–2 orang",
+                  items: [
+                    "Pemangkasan rumput & tanaman hias",
+                    "Penyapuan dan pembersihan daun kering",
+                    "Penyiraman tanaman",
+                    "Perapihan pot & area taman",
+                    "Pembersihan sampah ringan"
+                  ]
+                },
+                {
+                  name: "General Garden Cleaning",
+                  price: "Mulai Rp 450.000",
+                  duration: "3–5 jam",
+                  team: "2–3 orang",
+                  items: [
+                    "Pemotongan rumput dengan mesin",
+                    "Perapihan & pembentukan tanaman",
+                    "Pembersihan gulma ringan",
+                    "Penggemburan tanah ringan",
+                    "Pengangkutan sampah taman (maks. 2 karung)"
+                  ]
+                },
+                {
+                  name: "Deep Garden Treatment",
+                  price: "Mulai Rp 850.000",
+                  duration: "6–8 jam",
+                  team: "3–4 orang",
+                  items: [
+                    "Pembersihan total lahan/taman lama tidak terawat",
+                    "Pembersihan gulma & semak liar",
+                    "Pemangkasan pohon kecil–menengah",
+                    "Perataan & penggemburan tanah",
+                    "Pengangkutan sampah taman (maks. 5 karung)",
+                    "Konsultasi penataan taman sederhana"
+                  ]
+                },
+                {
+                  name: "Syarat & Ketentuan",
+                  items: [
+                    "Harga dapat menyesuaikan luas lahan dan tingkat kerimbunan",
+                    "Area kerja harus dalam kondisi aman dan bebas hewan berbahaya",
+                    "Air dan listrik disediakan oleh pelanggan",
+                    "Sampah taman melebihi ketentuan karung dikenakan biaya tambahan",
+                    "Pemangkasan pohon tinggi (>3 meter) dikenakan biaya tambahan",
+                    "Pembelian pupuk, tanaman baru, atau material tambahan tidak termasuk dalam paket",
+                    "Booking minimal H-1 sebelum jadwal pengerjaan",
+                    "Pembatalan mendadak (hari-H) dikenakan biaya transport"
+                  ]
+                }
+              ]}
               igLink="https://www.instagram.com/babatrumput_rumahkinclongmedan?igsh=MXF2ejRuZHNoZWxyNg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -295,10 +528,44 @@ export default function App() {
             <ServiceImageCard
               img="/services/cucitoren.png"
               title="Toren Cleaning (Kuras Tangki Air)"
-              desc={`Air bersih adalah kunci kesehatan kulit dan pencernaan keluarga.
-                • Kuras Toren Atas/Bawah: Membersihkan endapan lumpur, lumut, dan pasir di dasar tangki.
-                • Pembersihan Kran Mampet: Melancarkan aliran air yang tersumbat kotoran dari toren.
-                • Direkomendasikan dilakukan rutin setiap 3-6 bulan sekali.`}
+              intro={`CUCI TOREN adalah layanan pembersihan khusus bagian dalam dan luar toren air untuk menjaga kualitas air tetap bersih dan higienis. 
+                      Endapan lumpur, lumut, dan bakteri di dalam tangki dapat menyebabkan air kotor serta berdampak pada kesehatan. 
+                      Layanan ini dapat digunakan untuk toren atas maupun ground tank.`}
+              services={[
+                {
+                  name: "Daftar Harga Cuci Toren",
+                  items: [
+                    "500 Liter — Rp 175.000",
+                    "750 Liter — Rp 200.000",
+                    "1000 Liter — Rp 225.000",
+                    "1500 Liter — Rp 300.000",
+                    "2000 Liter — Rp 350.000",
+                    "3000 Liter — Rp 450.000",
+                    "4000 Liter — Rp 550.000",
+                    "5000 Liter — Rp 650.000"
+                  ]
+                },
+                {
+                  name: "Termasuk Dalam Layanan",
+                  duration: "Estimasi 1 hari kerja • Tim profesional",
+                  items: [
+                    "Pembersihan bagian dalam toren",
+                    "Pembersihan bagian luar toren",
+                    "Penyikatan dinding & dasar tangki",
+                    "Pengangkatan lumpur & endapan",
+                    "Biaya sudah termasuk peralatan kerja"
+                  ]
+                },
+                {
+                  name: "Syarat & Ketentuan",
+                  items: [
+                    "Berlaku untuk toren atas dan ground tank",
+                    "Ground tank tanpa pipa pembuangan dikenakan biaya tambahan (pengurasan manual)",
+                    "Akses ke lokasi toren harus aman dan memungkinkan untuk pengerjaan",
+                    "Layanan yang tidak melalui pemesanan resmi admin Rumah Kinclong Medan bukan menjadi tanggung jawab kami"
+                  ]
+                }
+              ]}
               igLink="https://www.instagram.com/cucitoren_rumahkinclongmedan?igsh=MWd2ejZhNmw4MmUxcQ=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
@@ -308,16 +575,112 @@ export default function App() {
             <ServiceImageCard
               img="/services/cuciac.png"
               title="AC Maintenance (Perawatan AC)"
-              desc={`Pastikan udara di rumah sejuk dan sehat.
-                • Cuci AC (Split/Cassette): Pembersihan filter dan evaporator agar AC kembali dingin dan hemat listrik.
-                • Isi Freon (R22/R32/R410): Penambahan atau pengisian ulang gas pendingin.
-                • Perbaikan Ringan: Mengatasi AC bocor air, berisik, atau tidak dingin.`}
+              intro={`AC yang jarang dibersihkan dapat menyebabkan udara tidak sehat, bau tidak sedap, dan konsumsi listrik yang lebih boros. 
+                      Rumah Kinclong Medan menyediakan layanan perawatan dan pembersihan AC profesional untuk rumah, kantor, ruko, dan bangunan komersial agar AC tetap dingin, bersih, dan awet.`}
+              services={[
+                {
+                  name: "Cuci AC Standard (Wall Mounted)",
+                  price: "Mulai Rp 90.000 / unit",
+                  duration: "45–60 menit • 1 teknisi",
+                  items: [
+                    "Pembersihan filter dan evaporator",
+                    "Pembersihan casing indoor",
+                    "Pengecekan aliran air & saluran pembuangan",
+                    "Pengecekan tekanan freon",
+                    "Testing fungsi setelah selesai"
+                  ]
+                },
+                {
+                  name: "Cuci AC + Bongkar Total",
+                  price: "Mulai Rp 150.000 / unit",
+                  duration: "1–2 jam • 1–2 teknisi",
+                  items: [
+                    "Pembongkaran unit indoor",
+                    "Pencucian evaporator menyeluruh",
+                    "Pembersihan kipas blower",
+                    "Pembersihan casing indoor & outdoor ringan",
+                    "Pengecekan freon & kelistrikan dasar"
+                  ]
+                },
+                {
+                  name: "Service AC (Perbaikan Ringan)",
+                  price: "Mulai Rp 200.000",
+                  duration: "Sesuai kerusakan • 1 teknisi",
+                  items: [
+                    "Pengecekan unit tidak dingin",
+                    "Perbaikan kebocoran air",
+                    "Pengecekan kapasitor & komponen dasar",
+                    "Pembersihan ringan jika diperlukan",
+                    "Estimasi biaya sebelum perbaikan lanjutan"
+                  ]
+                },
+                {
+                  name: "Syarat & Ketentuan",
+                  items: [
+                    "Harga berlaku untuk AC tipe wall mounted (rumah tangga)",
+                    "AC cassette, standing, atau kapasitas besar dikenakan biaya berbeda",
+                    "Pengisian freon tidak termasuk dalam paket cuci (biaya tambahan)",
+                    "Unit harus dalam kondisi dapat diakses dengan aman",
+                    "Booking minimal H-1 sebelum pengerjaan",
+                    "Pembatalan mendadak (hari-H) dikenakan biaya transport"
+                  ]
+                }
+              ]}
               igLink="https://www.instagram.com/cuciac_rumahkinclongmedan?igsh=MWlkc3VpMDNpNG02dg=="
               fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
           </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              Mengapa Memilih Kami?
+            </h2>
+          </div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center">
+
+            <WhyCard
+              icon="👔"
+              title="Profesional"
+              desc="Tim terlatih dan berpengalaman yang bekerja sesuai standar kebersihan terbaik."
+            />
+
+            <WhyCard
+              icon="🌿"
+              title="Ramah Lingkungan"
+              desc="Menggunakan peralatan dan cairan pembersih yang aman serta tidak merusak lingkungan."
+            />
+
+            <WhyCard
+              icon="⏰"
+              title="Fleksibel"
+              desc="Jadwal bisa disesuaikan dengan kebutuhan pelanggan, termasuk area bisnis."
+            />
+
+            <WhyCard
+              icon="✔️"
+              title="Terpercaya & Lengkap"
+              desc="Menyediakan berbagai layanan kebersihan dari rumah hingga kantor."
+            />
+
+            <WhyCard
+              icon="💰"
+              title="Harga Terjangkau"
+              desc="Solusi kebersihan berkualitas dengan harga kompetitif dan transparan."
+            />
+
+          </div>
+
         </div>
       </section>
 
@@ -356,8 +719,8 @@ export default function App() {
               </h4>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Rumah Kinclong Medan, Layanan pembersih secara detail dan menyeluruh. 
-                Efektif untuk pembersihan rumah dan kantor. Cleaning Service, Gardening, Toren Cleaning, 
+                Rumah Kinclong Medan, Layanan pembersih secara detail dan menyeluruh.
+                Efektif untuk pembersihan rumah dan kantor. Cleaning Service, Gardening, Toren Cleaning,
                 And AC Maintenance yang berada dikota Medan dan sekitarnya.
               </p>
 
@@ -850,6 +1213,28 @@ export default function App() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="py-28 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
+
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-4">
+              Frequently Asked <span className="text-green-600">Questions</span>
+            </h3>
+            <p className="text-gray-600">
+              Pertanyaan yang sering diajukan mengenai layanan Rumah Kinclong Medan
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqData.map((item, index) => (
+              <FAQItem key={index} item={item} />
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* Contact */}
       <section
         id="contact"
@@ -945,4 +1330,58 @@ export default function App() {
       </footer>
     </div>
   );
+
+  function FAQItem({ item }) {
+    const [open, setOpen] = useState(false);
+
+    return (
+      <motion.div
+        layout
+        className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden"
+      >
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-gray-800 hover:bg-gray-50 transition"
+        >
+          {item.question}
+          <span className="text-green-600 text-xl">
+            {open ? "×" : "+"}
+          </span>
+        </button>
+
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="px-6 pb-5 text-gray-600 leading-relaxed"
+          >
+            {item.answer}
+          </motion.div>
+        )}
+      </motion.div>
+    );
+  }
 }
+
+function WhyCard({ icon, title, desc }) {
+  return (
+    <div className="group transition duration-300 hover:-translate-y-2">
+
+      <div className="text-5xl mb-6">
+        {icon}
+      </div>
+
+      <h3 className="text-lg font-semibold text-gray-800 mb-3">
+        {title}
+      </h3>
+
+      <p className="text-gray-600 text-sm leading-relaxed">
+        {desc}
+      </p>
+
+    </div>
+  );
+}
+
+

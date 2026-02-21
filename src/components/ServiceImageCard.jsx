@@ -6,7 +6,8 @@ import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 export default function ServiceImageCard({
     img,
     title,
-    desc,
+    intro,
+    services = [],
     igLink,
     fbLink,
     tiktokLink,
@@ -95,20 +96,97 @@ export default function ServiceImageCard({
 
             {/* MODAL */}
             {open && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-                    <div className="bg-white rounded-2xl max-w-lg w-full p-6 relative">
-                        <button
-                            onClick={() => setOpen(false)}
-                            className="absolute top-3 right-4 text-xl text-gray-500 hover:text-black"
-                        >
-                            ✕
-                        </button>
+                <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center sm:p-6">
 
-                        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+                    <div className="
+      bg-white w-full h-full 
+      sm:h-auto sm:max-h-[85vh] 
+      sm:max-w-3xl 
+      sm:rounded-3xl 
+      flex flex-col 
+      shadow-2xl 
+      animate-modalEnter
+    ">
 
-                        <div className="text-gray-700 whitespace-pre-line leading-relaxed">
-                            {desc}
+                        {/* HEADER */}
+                        <div className="px-6 sm:px-8 pt-6 pb-4 border-b relative">
+                            <button
+                                onClick={() => setOpen(false)}
+                                className="absolute top-5 right-6 text-xl text-gray-400 hover:text-black transition"
+                            >
+                                ✕
+                            </button>
+
+                            <h3 className="text-xl sm:text-2xl font-bold text-gray-800">
+                                {title}
+                            </h3>
                         </div>
+
+                        {/* BODY */}
+                        <div className="px-6 sm:px-8 py-6 overflow-y-auto flex-1">
+
+                            {intro && (
+                                <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                                    {intro}
+                                </p>
+                            )}
+
+                            <div className="space-y-8">
+                                {services.map((service, index) => (
+                                    <div key={index} className="border-b pb-6 last:border-none">
+
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                                            <h4 className="text-lg font-semibold text-green-700">
+                                                {service.name}
+                                            </h4>
+
+                                            {service.price && (
+                                                <span className="text-sm font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full self-start sm:self-auto">
+                                                    {service.price}
+                                                </span>
+                                            )}
+                                        </div>
+
+                                        {service.duration && (
+                                            <p className="text-xs text-gray-500 mb-3">
+                                                ⏱ {service.duration}
+                                            </p>
+                                        )}
+
+                                        <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
+                                            {service.items.map((item, i) => (
+                                                <li key={i} className="flex items-start gap-2">
+                                                    <span className="text-green-600 mt-1">✔</span>
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* FOOTER */}
+                        <div className="px-6 sm:px-8 py-4 border-t bg-gray-50 sm:rounded-b-3xl">
+                            <div className="flex flex-col sm:flex-row gap-3">
+                                <a
+                                    href="https://wa.me/628xxxx"
+                                    target="_blank"
+                                    className="flex-1 text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+                                >
+                                    Pesan Sekarang
+                                </a>
+
+                                <button
+                                    onClick={() => setOpen(false)}
+                                    className="flex-1 border border-gray-300 py-3 rounded-xl hover:bg-gray-100 transition"
+                                >
+                                    Tutup
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             )}
