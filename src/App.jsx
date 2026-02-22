@@ -1373,7 +1373,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="text-green-600 font-medium hover:underline"
                   >
-                    rumahkinclongmedan.vercel.app
+                    rumahkinclongmedan.my.id
                   </a>
                 </span>
               </div>
