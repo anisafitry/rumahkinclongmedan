@@ -368,7 +368,7 @@ export default function App() {
               di kota Medan seperti Medan Area, Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, 
               Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan
               dan Deli Serdang sekitarnya. Kami menyediakan berbagai pilihan layanan cleaning service 
-              yang dapat disesuaikan dengan kebutuhan rumah, kantor, atau bangunan komersial. Dengan tim profesional 
+              yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor, dan apartemen atau bangunan komersial. Dengan tim profesional 
               dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal."
               services={[
                 {
