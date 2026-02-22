@@ -364,11 +364,11 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              intro="Daily Cleaning Layanan pembersih secara standar, Pembersihan ini menggunakan sistem durasi , layanan ini cocok digunkan pekerjaan pembersihan yang dapat di ukur dengan waktu atau 
+              intro="Daily Cleaning Layanan pembersih secara standar, Pembersihan ini menggunakan sistem durasi, layanan ini cocok digunakan bagi pekerjaan pembersihan yang dapat di ukur dengan waktu atau 
               bersipat harian, rutin perawatan. Meskipun layanan ini direkomendasikan untuk unit dan unian. namun lalayanan ini dapat juga di gunakan untuk unit yang sudah lama dan tidak perlu melakuan
-              survei terlebih dahulu maka anda harus menentukan jumlah staff cleaner dan dan durasi kerja sesuai dengan kebutuhan Area Layanan Medan Selatan, Medan Kota, Medan timur/Utara Sekitarnya 
-              Kami menyediakan berbagai pilihan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor, dan apartemen atau bangunan komersial. Dengan tim profesional 
-              dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal."
+              survei terlebih dahulu maka anda harus menentukan jumlah staff cleaner dan dan durasi kerja sesuai dengan kebutuhan rumah,kos,kantor, apartemen atau bangunan komersial. Dengan tim profesional 
+              dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, Medan Selatan, Medan Utara/ Timur 
+              dan Deli Serdang  "
               services={[
                 {
                   name: "Daily Cleaning",
@@ -478,7 +478,8 @@ export default function App() {
               intro="Gardening Layanan Perawatan perawatan taman  dan Lahan dan pembersihan lahan secara detail dan 
                 meyeluruh yang terbaik di kota Medan. Kami memahami bahwa taman yang asri adalah cerminan rumah yang sehat.
                 Tim kami Profesional dan siap menagani berbagai kondisi lahan, mulai dari halaman rumah, area perkantoran, 
-                hingga lahan kosong yang tidak terawat Area Layanan Medan Selatan, Medan Kota, Medan Timur/Utara dan sekitarnya"
+                hingga lahan kosong yang tidak terawat Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, 
+                Medan Selatan, Medan Utara/ Timur dan Deli Serdang "
               services={[
                 {
                   name: "Routine Garden Maintenance",
@@ -545,7 +546,8 @@ export default function App() {
               title="Toren Cleaning (Kuras Tangki Air)"
               intro="Toren Cleaning Layanan yang memberikan solusi air bersih untuk kesehatan keluarga Anda.
               Toren yang jarang di kurang dapat menjadi sarang lumut, endapatn lumpur hingga bateri yang membahayakan kulit dan kesehatan. 
-              Kami melayani pembersihan Area wilayah layanan. Medan Area, Medan Tengah, Medan Selatan, Medan Utara dan Barat dan Medan Sekitranya"
+              Kami melayani pembersihan Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, Medan Selatan, Medan Utara,
+              Medan Timur, Deli Serdang dan sekitarnya "
               services={[
                 {
                   name: "Daftar Harga Cuci Toren",
@@ -593,7 +595,7 @@ export default function App() {
               intro="AC Maintanance Layanan perawatan kebersihan undara di dalam hunia Anda tetap sejuk, bersih dan 
                     sehat. AC yang tidak dirawat secara rutin dapat mengakibatkan debu, jamur, dan bakteri 
                     serta membuat tagihan listrik membekak. Kami meyediakan layanaan perawatan AC secara detail dan 
-                    meyeluruh di kota Medan Area Layananan. Medan Area, Medan Kota/ Barat, Medan Selatan,
+                    meyeluruh di kota Medan Area Layananan. Medan Area, Medan Kota. Medan Barat, Medan Selatan,
                     Medan utara, Deli serdang dan sekiranya."
               services={[
                 {
