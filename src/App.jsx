@@ -476,8 +476,12 @@ export default function App() {
             <ServiceImageCard
               img="/services/babatrumput.png"
               title="Gardening (Perawatan Taman & Lahan)"
-              intro={`Rumah Kinclong Medan menghadirkan layanan Gardening profesional untuk menjaga taman dan lahan Anda tetap rapi, bersih, dan sehat. 
-              Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada tim kami yang berpengalaman.`}
+              intro={`Rumah Kinclong Medan Layanan Perawatan Taman dan Lahan secara detail yang menyeluruh yang terbaik di kota Medan seperti Medan Area, 
+                Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, 
+                Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan dan Deli Serdang sekitarnya. Kami Meyediakan berbagai pilihan Layanan 
+                Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
+                Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional untuk menjaga taman
+                dan lahan Anda tetap rapi, bersih, dan sehat. Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada tim kami yang berpengalaman.`}
               services={[
                 {
                   name: "Routine Garden Maintenance",
