@@ -504,19 +504,16 @@ export default function App() {
                   ]
                 },
                 {
-                  name: "Setrika",
+                  name: "SIroning Service",
                   price: "Rp 800.000 – 1.800.000",
                   duration: "5 – 8 jam kerja",
                   team: "3 – 4 orang",
                   items: [
-                    "Pembersihan sawang area tinggi (di atas 3,5 M2)",
-                    "Pembersihan kaca tinggi (di atas 2,5 M2)",
-                    "Pembersihan khusus kaca",
-                    "Pembersihan panel dinding tinggi (di atas 2,5 M2)",
-                    "Bersihkan plafon & sudut langit-langit",
-                    "Pembersihan area tidak terjangkau",
-                    "Pembersihan kanopi",
-                    "Pembersihan khusus pada material keramik, batu alam, stainless, hpl dll",
+                    "PLayanan bersifat home service, layanan akan dilakukan di rumah anda",
+                    "Anda perlu menyediakan perlengkapan (alas setrika) dan peralatan setrika",
+                    "Estimasi pakaian yang dapat diselesaikan dalam satu jam adalah 18-20 pcs pakaian, tidak termasukj pakaian seperti jas, gaun, gamis, kebaya, sprei dll",
+                    "Segala kerusakan pada pakaian anda yang terbukti adalah kesalahan staff kami adalah tanggung jawab kami",
+            
                   ],
                   terms: [
                     "Harga menyesuaikan luas & tingkat kekotoran",
