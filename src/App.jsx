@@ -446,6 +446,75 @@ export default function App() {
                   ]
                 },
                 {
+                  name: "Toilet Cleaning",
+                  price: "Rp 800.000 – 1.800.000",
+                  duration: "5 – 8 jam kerja",
+                  team: "3 – 4 orang",
+                  items: [
+                    "Pembersihan sawang area tinggi (di atas 3,5 M2)",
+                    "Pembersihan kaca tinggi (di atas 2,5 M2)",
+                    "Pembersihan khusus kaca",
+                    "Pembersihan panel dinding tinggi (di atas 2,5 M2)",
+                    "Bersihkan plafon & sudut langit-langit",
+                    "Pembersihan area tidak terjangkau",
+                    "Pembersihan kanopi",
+                    "Pembersihan khusus pada material keramik, batu alam, stainless, hpl dll",
+                  ],
+                  terms: [
+                    "Harga menyesuaikan luas & tingkat kekotoran",
+                    "Akses listrik & air wajib tersedia",
+                    "Tidak termasuk pekerjaan renovasi",
+                    "Tidak termasuk pembersihan limbah berbahaya",
+                    "Survey gratis untuk area besar"
+                  ]
+                },
+                {
+                  name: "Vacum Cleaning",
+                  price: "Rp 800.000 – 1.800.000",
+                  duration: "5 – 8 jam kerja",
+                  team: "3 – 4 orang",
+                  items: [
+                    "Pembersihan sawang area tinggi (di atas 3,5 M2)",
+                    "Pembersihan kaca tinggi (di atas 2,5 M2)",
+                    "Pembersihan khusus kaca",
+                    "Pembersihan panel dinding tinggi (di atas 2,5 M2)",
+                    "Bersihkan plafon & sudut langit-langit",
+                    "Pembersihan area tidak terjangkau",
+                    "Pembersihan kanopi",
+                    "Pembersihan khusus pada material keramik, batu alam, stainless, hpl dll",
+                  ],
+                  terms: [
+                    "Harga menyesuaikan luas & tingkat kekotoran",
+                    "Akses listrik & air wajib tersedia",
+                    "Tidak termasuk pekerjaan renovasi",
+                    "Tidak termasuk pembersihan limbah berbahaya",
+                    "Survey gratis untuk area besar"
+                  ]
+                },
+                {
+                  name: "Setrika",
+                  price: "Rp 800.000 – 1.800.000",
+                  duration: "5 – 8 jam kerja",
+                  team: "3 – 4 orang",
+                  items: [
+                    "Pembersihan sawang area tinggi (di atas 3,5 M2)",
+                    "Pembersihan kaca tinggi (di atas 2,5 M2)",
+                    "Pembersihan khusus kaca",
+                    "Pembersihan panel dinding tinggi (di atas 2,5 M2)",
+                    "Bersihkan plafon & sudut langit-langit",
+                    "Pembersihan area tidak terjangkau",
+                    "Pembersihan kanopi",
+                    "Pembersihan khusus pada material keramik, batu alam, stainless, hpl dll",
+                  ],
+                  terms: [
+                    "Harga menyesuaikan luas & tingkat kekotoran",
+                    "Akses listrik & air wajib tersedia",
+                    "Tidak termasuk pekerjaan renovasi",
+                    "Tidak termasuk pembersihan limbah berbahaya",
+                    "Survey gratis untuk area besar"
+                  ]
+                },
+                {
                   name: "Post Renovation",
                   items: [
                     "Sisa cat & semen",
