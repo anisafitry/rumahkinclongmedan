@@ -406,12 +406,14 @@ export default function App() {
                   duration: "3 – 4 jam kerja",
                   team: "2 orang",
                   items: [
-                    "Sapu, pel & vacuum lantai",
-                    "Lap debu detail furniture",
-                    "Pembersihan kamar mandi menyeluruh",
-                    "Bersihkan dapur & kompor ringan",
-                    "Lap kaca bagian dalam",
-                    "Bersihkan kipas angin & ventilasi"
+                    "Pembersihan sawang",
+                    "Pembersihan plafon (exhaust fan, kipas, lampu gantung)",
+                    "Pembersihan dinding/panel dinding/aksesoris dinding",
+                    "Pembersihan pintu/kusen/jendela",
+                    "Pembersihan meja, kursi, dipan Kasur",
+                    "Pembersihan cabinet, partisi, backdrop",
+                    "Pembersihan toilet",
+                    "BPembersihan kaca",
                   ],
                   terms: [
                     "Tidak termasuk pembersihan kerak berat",
