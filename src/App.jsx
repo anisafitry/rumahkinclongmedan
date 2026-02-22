@@ -554,8 +554,8 @@ export default function App() {
               Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
               Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional 
               untuk menjaga air tetap bersih dan higienis. Endapan lumpur dan lumut pada toren akan mengakibatkan sumber penyakit dengan adayan bakteri 
-              didalam tangki yang jarang di bersihkan bisa menjadi sarang nyamuk dan hama — percayakan perawatannya
-              kepada tim kami yang berpengalaman dan profesioan.`}
+              didalam tangki yang jarang di bersihkan bisa menjadi sarang nyamuk dan hama — percayakan pembersihanya kepada tim kami yang berpengalaman
+              dan profesioan.`}
               services={[
                 {
                   name: "Daftar Harga Cuci Toren",
