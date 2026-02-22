@@ -171,7 +171,7 @@ export default function ServiceImageCard({
                         <div className="px-6 sm:px-8 py-4 border-t bg-gray-50 sm:rounded-b-3xl">
                             <div className="flex flex-col sm:flex-row gap-3">
                                 <a
-                                    href="https://wa.me/628xxxx"
+                                    href="https://wa.me/6285372726263"
                                     target="_blank"
                                     className="flex-1 text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
                                 >
