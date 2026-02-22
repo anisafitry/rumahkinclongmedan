@@ -480,8 +480,9 @@ export default function App() {
                 Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, 
                 Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan dan Deli Serdang sekitarnya. Kami Meyediakan berbagai pilihan Layanan 
                 Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
-                Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional untuk menjaga taman
-                dan lahan Anda tetap rapi, bersih, dan sehat. Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada tim kami yang berpengalaman.`}
+                Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional untuk menjaga 
+                taman dan lahan Anda tetap rapi, bersih, dan sehat. Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada 
+                tim kami yang berpengalaman dan profesional.`}
               services={[
                 {
                   name: "Routine Garden Maintenance",
