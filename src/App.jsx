@@ -364,8 +364,10 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              intro="Rumah Kinclong Medan hadir sebagai solusi kebersihan terbaik untuk Anda 
-              yang berdomisili di Medan dan sekitarnya. Kami menyediakan berbagai pilihan layanan cleaning service 
+              intro="Rumah Kinclong Medan Layanan pembersih secara detail dan menyeluruh yang terbaik 
+              Medan dan Medan Area, Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, 
+              Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan
+              sekitarnya. Kami menyediakan berbagai pilihan layanan cleaning service 
               yang dapat disesuaikan dengan kebutuhan rumah, kantor, atau bangunan komersial. Dengan tim profesional 
               dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal."
               services={[
