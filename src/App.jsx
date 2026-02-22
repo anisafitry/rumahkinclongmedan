@@ -427,13 +427,14 @@ export default function App() {
                   duration: "5 – 8 jam kerja",
                   team: "3 – 4 orang",
                   items: [
-                    "Pembersihan kerak kamar mandi berat",
-                    "Bersihkan noda membandel dapur",
-                    "Cuci & lap kaca dalam/luar (akses aman)",
-                    "Bersihkan sela keramik & nat",
+                    "Pembersihan sawang area tinggi (di atas 3,5 M2)",
+                    "Pembersihan kaca tinggi (di atas 2,5 M2)",
+                    "Pembersihan khusus kaca",
+                    "Pembersihan panel dinding tinggi (di atas 2,5 M2)",
                     "Bersihkan plafon & sudut langit-langit",
-                    "Vacuum kasur & sofa ringan",
-                    "Pembersihan detail sudut sulit"
+                    "Pembersihan area tidak terjangkau",
+                    "Pembersihan kanopi",
+                    "Pembersihan khusus pada material keramik, batu alam, stainless, hpl dll",
                   ],
                   terms: [
                     "Harga menyesuaikan luas & tingkat kekotoran",
