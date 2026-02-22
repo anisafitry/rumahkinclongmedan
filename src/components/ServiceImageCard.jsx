@@ -126,7 +126,7 @@ export default function ServiceImageCard({
                         <div className="px-6 sm:px-8 py-6 overflow-y-auto flex-1">
 
                             {intro && (
-                                <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                                <p className="text-gray-600 leading-relaxed tracking-wide mb-6 text-sm text-justify sm:text-base">
                                     {intro}
                                 </p>
                             )}
@@ -153,11 +153,13 @@ export default function ServiceImageCard({
                                             </p>
                                         )}
 
-                                        <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
+                                        <ul className="space-y-2 text-gray-600 text-sm sm:text-base text-justify">
                                             {service.items.map((item, i) => (
                                                 <li key={i} className="flex items-start gap-2">
                                                     <span className="text-green-600 mt-1">✔</span>
-                                                    <span>{item}</span>
+                                                    <p className="text-justify leading-relaxed">
+                                                        {item}
+                                                    </p>
                                                 </li>
                                             ))}
                                         </ul>
