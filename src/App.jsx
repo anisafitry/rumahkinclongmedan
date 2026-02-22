@@ -547,9 +547,15 @@ export default function App() {
             <ServiceImageCard
               img="/services/cucitoren.png"
               title="Toren Cleaning (Kuras Tangki Air)"
-              intro={`CUCI TOREN adalah layanan pembersihan khusus bagian dalam dan luar toren air untuk menjaga kualitas air tetap bersih dan higienis. 
-                      Endapan lumpur, lumut, dan bakteri di dalam tangki dapat menyebabkan air kotor serta berdampak pada kesehatan. 
-                      Layanan ini dapat digunakan untuk toren atas maupun ground tank.`}
+              intro={`Rumah Kinclong Medan Layanan Pembersihan khusus bagian dalam dan luar toren air untuk menjaga kualitas air 
+              secara detail yang menyeluruh yang terbaik di kota Medan seperti Medan Area, Medan Tembung, Medan Perjuangan, Medan Denai, 
+              Medan Maimun, Medan Polonia, Medan Timur, Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, Medan Marelan, Medan Selayang, 
+              Medan Sunggal, Medan Tuntungan, Medan Belawan dan Deli Serdang sekitarnya. Kami Meyediakan berbagai pilihan Layanan 
+              Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
+              Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional 
+              untuk menjaga air tetap bersih dan higienis. Endapan lumpur dan lumut pada toren akan mengakibatkan sumber penyakit dengan adayan bakteri 
+              didalam tangki yang jarang di bersihkan akan yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya
+              kepada tim kami yang berpengalaman dan profesioan.`}
               services={[
                 {
                   name: "Daftar Harga Cuci Toren",
