@@ -412,7 +412,7 @@ export default function App() {
                     "Pembersihan meja, kursi, dipan Kasur",
                     "Pembersihan cabinet, partisi, backdrop",
                     "Pembersihan toilet",
-                    "BPembersihan kaca",
+                    "Pembersihan kaca",
                   ],
                   terms: [
                     "Tidak termasuk pembersihan kerak berat",
@@ -459,7 +459,7 @@ export default function App() {
                     "Pembersihan kloset, urinal dan bak air",
                     "Pembersihan shower glass dan cermin",
                     "Pembersihanlantaiamur & lumut",
-                    "Bau tidak seda",
+                    "Bau tidak sedap",
                   ],
                   terms: [
                     "Harga menyesuaikan luas & tingkat kekotoran",
@@ -768,7 +768,7 @@ export default function App() {
             <WhyCard
               icon="✔️"
               title="Terpercaya & Lengkap"
-              desc="Menyediakan berbagai layanan kebersihan dari rumah hingga kantor."
+              desc="Menyediakan berbagai layanan kebersihan dari rumah, kos, antor, kos, apartemen atau bangunan komersial."
             />
 
             <WhyCard
