@@ -364,11 +364,10 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              intro="Rumah Kinclong Medan Layanan pembersih secara detail dan menyeluruh yang terbaik 
-              di kota Medan seperti Medan Area, Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, 
-              Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan
-              dan Deli Serdang sekitarnya. Kami menyediakan berbagai pilihan layanan cleaning service 
-              yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor, dan apartemen atau bangunan komersial. Dengan tim profesional 
+              intro="Daily Cleaning Layanan pembersih secara standar, Pembersihan ini menggunakan sistem durasi , layanan ini cocok digunkan pekerjaan pembersihan yang dapat di ukur dengan waktu atau 
+              bersipat harian, rutin perawatan. Meskipun layanan ini direkomendasikan untuk unit dan unian. namun lalayanan ini dapat juga di gunakan untuk unit yang sudah lama dan tidak perlu melakuan
+              survei terlebih dahulu maka anda harus menentukan jumlah staff cleaner dan dan durasi kerja sesuai dengan kebutuhan Area Layanan Medan Selatan, Medan Kota, Medan timur/Utara Sekitarnya 
+              Kami menyediakan berbagai pilihan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor, dan apartemen atau bangunan komersial. Dengan tim profesional 
               dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal."
               services={[
                 {
@@ -476,13 +475,10 @@ export default function App() {
             <ServiceImageCard
               img="/services/babatrumput.png"
               title="Gardening (Perawatan Taman & Lahan)"
-              intro={`Rumah Kinclong Medan Layanan Perawatan Taman dan Lahan secara detail yang menyeluruh yang terbaik di kota Medan seperti Medan Area, 
-                Medan Tembung, Medan Perjuangan, Medan Denai, Medan Maimun, Medan Polonia, Medan Timur, Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, 
-                Medan Marelan, Medan Selayang, Medan Sunggal, Medan Tuntungan, Medan Belawan dan Deli Serdang sekitarnya. Kami Meyediakan berbagai pilihan Layanan 
-                Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
-                Dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal.profesional untuk menjaga 
-                taman dan lahan Anda tetap rapi, bersih, dan sehat. Halaman yang tidak terawat bisa menjadi sarang nyamuk dan hama — percayakan perawatannya kepada 
-                tim kami yang berpengalaman dan profesional.`}
+              intro="Gardening Layanan Perawatan perawatan taman  dan Lahan dan pembersihan lahan secara detail dan 
+                meyeluruh yang terbaik di kota Medan. Kami memahami bahwa taman yang asri adalah cerminan rumah yang sehat.
+                Tim kami Profesional dan siap menagani berbagai kondisi lahan, mulai dari halaman rumah, area perkantoran, 
+                hingga lahan kosong yang tidak terawat Area Layanan Medan Selatan, Medan Kota, Medan Timur/Utara dan sekitarnya"
               services={[
                 {
                   name: "Routine Garden Maintenance",
@@ -547,15 +543,9 @@ export default function App() {
             <ServiceImageCard
               img="/services/cucitoren.png"
               title="Toren Cleaning (Kuras Tangki Air)"
-              intro={`Rumah Kinclong Medan Layanan Pembersihan khusus bagian dalam dan luar toren air untuk menjaga kualitas air 
-              secara detail yang menyeluruh yang terbaik di kota Medan seperti Medan Area, Medan Tembung, Medan Perjuangan, Medan Denai, 
-              Medan Maimun, Medan Polonia, Medan Timur, Medan Petisah, Medan Johor, Medan Deli, Medan Helvetia, Medan Marelan, Medan Selayang, 
-              Medan Sunggal, Medan Tuntungan, Medan Belawan dan Deli Serdang sekitarnya. Kami Meyediakan berbagai pilihan Layanan 
-              Kami menyediakan berbagai pilihan layanan yang dapat disesuaikan dengan kebutuhan rumah,kos,kantor atau bangunan komersial. 
-              dengan tim profesional dan pengalaman bertahun-tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal
-              untuk menjaga air tetap bersih dan higienis. Endapan lumpur dan lumut pada toren akan mengakibatkan sumber penyakit dengan
-              adayan bakteri didalam tangki yang jarang di bersihkan bisa menjadi sarang nyamuk dan hama — percayakan pembersihanya kepada 
-              tim kami yang berpengalaman dan profesional.`}
+              intro="Toren Cleaning Layanan yang memberikan solusi air bersih untuk kesehatan keluarga Anda.
+              Toren yang jarang di kurang dapat menjadi sarang lumut, endapatn lumpur hingga bateri yang membahayakan kulit dan kesehatan. 
+              Kami melayani pembersihan Area wilayah layanan. Medan Area, Medan Tengah, Medan Selatan, Medan Utara dan Barat dan Medan Sekitranya"
               services={[
                 {
                   name: "Daftar Harga Cuci Toren",
@@ -600,8 +590,11 @@ export default function App() {
             <ServiceImageCard
               img="/services/cuciac.png"
               title="AC Maintenance (Perawatan AC)"
-              intro={`AC yang jarang dibersihkan dapat menyebabkan udara tidak sehat, bau tidak sedap, dan konsumsi listrik yang lebih boros. 
-                      Rumah Kinclong Medan menyediakan layanan perawatan dan pembersihan AC profesional untuk rumah, kantor, ruko, dan bangunan komersial agar AC tetap dingin, bersih, dan awet.`}
+              intro="AC Maintanance Layanan perawatan kebersihan undara di dalam hunia Anda tetap sejuk, bersih dan 
+                    sehat. AC yang tidak dirawat secara rutin dapat mengakibatkan debu, jamur, dan bakteri 
+                    serta membuat tagihan listrik membekak. Kami meyediakan layanaan perawatan AC secara detail dan 
+                    meyeluruh di kota Medan Area Layananan. Medan Area, Medan Kota/ Barat, Medan Selatan,
+                    Medan utara, Deli serdang dan sekiranya."
               services={[
                 {
                   name: "Cuci AC Standard (Wall Mounted)",
