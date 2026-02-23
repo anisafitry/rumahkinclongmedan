@@ -364,11 +364,14 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              intro="Daily Cleaning Layanan pembersih secara standar, Pembersihan ini menggunakan sistem durasi, layanan ini cocok digunakan bagi pekerjaan pembersihan yang dapat di ukur dengan waktu atau 
-              bersipat harian, rutin perawatan. Meskipun layanan ini direkomendasikan untuk unit dan unian. namun lalayanan ini dapat juga di gunakan untuk unit yang sudah lama dan tidak perlu melakuan
-              survei terlebih dahulu maka anda harus menentukan jumlah staff cleaner dan dan durasi kerja sesuai dengan kebutuhan rumah, kos, kantor, apartemen atau bangunan komersial dengan tim profesional 
-              dan pengalaman bertahun - tahun, Rumah Kinclong Medan siap memberikan hasil pembersihan yang maksimal Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, Medan Selatan, Medan Utara, Medan Timur 
-              Deli Serdang dan sekitarnya"
+              intro="Cleaning Service merupakan layanan pembersihan dengan sistem 
+              durasi kerja. Layanan ini cocok untuk pekerjaan yang dapat diukur berdasarkan 
+              waktu, baik bersifat harian maupun perawatan rutin. Meskipun direkomendasikan 
+              untuk unit dan hunian, layanan ini juga dapat digunakan untuk unit yang sudah 
+              lama tidak dibersihkan tanpa perlu dilakukan survei terlebih dahulu. Anda cukup 
+              menentukan jumlah staf cleaner dan durasi kerja sesuai dengan kebutuhan, baik untuk 
+              rumah, kos, kantor, apartemen, maupun bangunan komersial lainnya. Area layanan kami mencakup 
+              seluruh wilayah Medan (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
               services={[
                 {
                   name: "Daily Cleaning",
@@ -553,11 +556,12 @@ export default function App() {
             <ServiceImageCard
               img="/services/babatrumput.png"
               title="Gardening (Perawatan Taman & Lahan)"
-              intro="Gardening Layanan Perawatan taman  dan Lahan untuk pembersihan lahan secara detail dan 
-                meyeluruh yang terbaik di kota Medan. Kami memahami bahwa taman yang asri adalah cerminan rumah yang sehat.
-                Tim kami profesional dan siap menagani berbagai kondisi lahan, mulai dari halaman rumah, area perkantoran, 
-                hingga lahan kosong yang tidak terawat Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, 
-                Medan Selatan, Medan Utara, Medan Timur, Deli Serdang dan sekitranya "
+              intro="Gardening adalah layanan perawatan taman dan pembersihan lahan yang dilakukan 
+              secara detail dan menyeluruh di Kota Medan. Kami memahami bahwa taman yang asri dan 
+              terawat merupakan cerminan hunian yang sehat dan nyaman. Tim kami profesional dan 
+              berpengalaman, siap menangani berbagai kondisi lahan, mulai dari halaman rumah, 
+              area perkantoran, hingga lahan kosong yang tidak terawat. Area layanan kami mencakup 
+              seluruh wilayah Medan (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
               services={[
                 {
                   name: "Routine Garden Maintenance",
@@ -622,10 +626,13 @@ export default function App() {
             <ServiceImageCard
               img="/services/cucitoren.png"
               title="Toren Cleaning (Kuras Tangki Air)"
-              intro="Toren Cleaning Layanan yang memberikan solusi air bersih untuk kesehatan keluarga Anda.
-              Toren yang jarang di kuras dapat menjadi sarang lumut, endapan lumpur hingga bakteri yang membahayakan kulit dan kesehatan. 
-              Kami melayani pembersihan Area Layanan Meliputi. Medan Area, Medan Kota, Medan Barat, Medan Selatan, Medan Utara,
-              Medan Timur, Deli Serdang dan sekitarnya "
+              intro="Toren Cleaning adalah layanan pembersihan toren yang memberikan solusi 
+              air bersih demi menjaga kesehatan keluarga Anda. Toren yang jarang dikuras 
+              berpotensi menjadi tempat berkembangnya lumut, endapan lumpur, hingga bakteri 
+              yang dapat membahayakan kesehatan kulit dan tubuh. Dengan proses pembersihan yang 
+              menyeluruh dan tenaga kerja profesional, kami memastikan toren Anda kembali bersih, 
+              higienis, dan aman digunakan. Area layanan kami mencakup seluruh wilayah Medan 
+              (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
               services={[
                 {
                   name: "Daftar Harga Cuci Toren",
@@ -670,11 +677,11 @@ export default function App() {
             <ServiceImageCard
               img="/services/cuciac.png"
               title="AC Maintenance (Perawatan AC)"
-              intro="AC Maintanance Layanan perawatan kebersihan udara di dalam hunia Anda tetap sejuk, bersih dan 
-                    sehat. AC yang tidak dirawat secara rutin dapat mengakibatkan debu, jamur, dan bakteri 
-                    serta membuat tagihan listrik membengkak. Kami meyediakan layanaan perawatan AC secara detail dan 
-                    meyeluruh di kota Medan Area Layananan. Medan Area, Medan Kota. Medan Barat, Medan Selatan,
-                    Medan utara, Deli serdang dan sekiranya."
+              intro="AC Maintenance adalah layanan perawatan AC untuk menjaga udara 
+              tetap sejuk, bersih, dan sehat. AC yang tidak dirawat secara rutin 
+              dapat menyebabkan penumpukan debu, jamur, dan bakteri serta meningkatkan 
+              konsumsi listrik. Area layanan kami mencakup seluruh wilayah Medan 
+              (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
               services={[
                 {
                   name: "Cuci AC Standard (Wall Mounted)",
