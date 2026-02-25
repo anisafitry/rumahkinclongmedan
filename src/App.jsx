@@ -364,14 +364,14 @@ export default function App() {
             <ServiceImageCard
               img="/services/cleaningservice.png"
               title="Cleaning Service (Kebersihan Interior)"
-              intro="Cleaning Service merupakan layanan pembersihan dengan sistem 
-              durasi kerja. Layanan ini cocok untuk pekerjaan yang dapat diukur berdasarkan 
-              waktu, baik bersifat harian maupun perawatan rutin. Meskipun direkomendasikan 
-              untuk unit dan hunian, layanan ini juga dapat digunakan untuk unit yang sudah 
-              lama tidak dibersihkan tanpa perlu dilakukan survei terlebih dahulu. Anda cukup 
-              menentukan jumlah staf cleaner dan durasi kerja sesuai dengan kebutuhan, baik untuk 
-              rumah, kos, kantor, apartemen, maupun bangunan komersial lainnya. Area layanan kami mencakup 
-              seluruh wilayah Medan (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
+              intro="Cleaning Service merupakan layanan pembersihan dengan sistem durasi kerja. 
+              Layanan ini cocok untuk pekerjaan yang dapat diukur berdasarkan waktu, baik bersifat 
+              harian maupun perawatan rutin. Meskipun direkomendasikan untuk unit dan hunian, 
+              layanan ini juga dapat digunakan untuk unit yang sudah lama tidak dibersihkan dan 
+              kami perlu melakukan survei terlebih dahulu. Kami juga menentukan jumlah staf cleaner 
+              dan durasi kerja sesuai dengan kebutuhan, baik untuk rumah, kos, kantor, apartemen, 
+              maupun bangunan komersial lainnya. Area layanan kami mencakup seluruh wilayah Medan 
+              (Medan Area, Kota, Barat, Selatan, Utara, Timur) serta Deli Serdang dan sekitarnya."
               services={[
                 {
                   name: "Daily Cleaning",
@@ -547,8 +547,8 @@ export default function App() {
                   ]
                 }
               ]}
-              igLink="https://www.instagram.com/jasa_cleaningservicemedan?igsh=amFzczc4Y3BwemQ4"
-              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
+              fbLink="https://www.facebook.com/rumahkinclongmedan"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
@@ -617,8 +617,8 @@ export default function App() {
                   ]
                 }
               ]}
-              igLink="https://www.instagram.com/babatrumput_rumahkinclongmedan?igsh=MXF2ejRuZHNoZWxyNg=="
-              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
+              fbLink="https://www.facebook.com/rumahkinclongmedan"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
@@ -668,8 +668,8 @@ export default function App() {
                   ]
                 }
               ]}
-              igLink="https://www.instagram.com/cucitoren_rumahkinclongmedan?igsh=MWd2ejZhNmw4MmUxcQ=="
-              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
+              fbLink="https://www.facebook.com/rumahkinclongmedan"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
@@ -731,8 +731,8 @@ export default function App() {
                   ]
                 }
               ]}
-              igLink="https://www.instagram.com/cuciac_rumahkinclongmedan?igsh=MWlkc3VpMDNpNG02dg=="
-              fbLink="https://www.facebook.com/share/16vU2Sw7zf/"
+              igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
+              fbLink="https://www.facebook.com/rumahkinclongmedan"
               tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
