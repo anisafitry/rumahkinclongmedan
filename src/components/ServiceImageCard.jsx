@@ -20,22 +20,26 @@ export default function ServiceImageCard({
             {/* CARD */}
             <motion.div
                 whileHover={{ y: -6 }}
-                className="bg-white p-6 rounded-2xl shadow text-center"
+                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center"
             >
-                <div className="flex justify-center mb-4">
+                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-xl">
                     <img
                         src={img}
                         alt={title}
-                        className="w-28 h-28 object-contain"
+                        className={`w-full h-full object-cover ${
+    title.includes("Gardening")
+      ? "object-left"
+      : "object-center"
+  }`}
                     />
                 </div>
 
-                <h4 className="text-xl font-semibold mb-4">{title}</h4>
+                <h4 className="text-xl font-semibold mt-5 mb-3">{title}</h4>
 
                 {/* BUTTON DESKRIPSI */}
                 <button
                     onClick={() => setOpen(true)}
-                    className="mb-4 px-4 py-2 text-sm rounded-lg bg-green-600 text-white hover:bg-green-700 transition"
+                    className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition"
                 >
                     Deskripsi
                 </button>

@@ -362,7 +362,7 @@ export default function App() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceImageCard
-              img="/services/cleaningservice.png"
+              img="/services/cleaninglogo.jpeg"
               title="Cleaning Service (Kebersihan Interior)"
               intro="Cleaning Service merupakan layanan pembersihan dengan sistem durasi kerja. 
               Layanan ini cocok untuk pekerjaan yang dapat diukur berdasarkan waktu, baik bersifat 
@@ -549,12 +549,12 @@ export default function App() {
               ]}
               igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
               fbLink="https://www.facebook.com/rumahkinclongmedan"
-              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              tiktokLink="https://www.tiktok.com/@rumahkinclongmedan"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
-              img="/services/babatrumput.png"
+              img="/services/babatrumput.jpeg"
               title="Gardening (Perawatan Taman & Lahan)"
               intro="Gardening adalah layanan perawatan taman dan pembersihan lahan yang dilakukan 
               secara detail dan menyeluruh di Kota Medan. Kami memahami bahwa taman yang asri dan 
@@ -619,12 +619,12 @@ export default function App() {
               ]}
               igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
               fbLink="https://www.facebook.com/rumahkinclongmedan"
-              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              tiktokLink="https://www.tiktok.com/@rumahkinclongmedan"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
-              img="/services/cucitoren.png"
+              img="/services/torenservies.jpeg"
               title="Toren Cleaning (Kuras Tangki Air)"
               intro="Toren Cleaning adalah layanan pembersihan toren yang memberikan solusi 
               air bersih demi menjaga kesehatan keluarga Anda. Toren yang jarang dikuras 
@@ -670,12 +670,12 @@ export default function App() {
               ]}
               igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
               fbLink="https://www.facebook.com/rumahkinclongmedan"
-              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              tiktokLink="https://www.tiktok.com/@rumahkinclongmedan"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
 
             <ServiceImageCard
-              img="/services/cuciac.png"
+              img="/services/acservice.jpeg"
               title="AC Maintenance (Perawatan AC)"
               intro="AC Maintenance adalah layanan perawatan AC untuk menjaga udara 
               tetap sejuk, bersih, dan sehat. AC yang tidak dirawat secara rutin 
@@ -733,7 +733,7 @@ export default function App() {
               ]}
               igLink="https://www.instagram.com/rumahkinclongmedan?igsh=dDk1M2l4ODVrajN2&utm_source=ig_contact_invite"
               fbLink="https://www.facebook.com/rumahkinclongmedan"
-              tiktokLink="https://www.tiktok.com/@jasacleaningservicemedan?_r=1&_t=ZS-93If9rWKtuR"
+              tiktokLink="https://www.tiktok.com/@rumahkinclongmedan"
               youtubeLink="https://www.youtube.com/@rumahkinclongmedan"
             />
           </div>
