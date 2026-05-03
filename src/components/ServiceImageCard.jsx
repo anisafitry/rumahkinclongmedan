@@ -22,7 +22,7 @@ export default function ServiceImageCard({
                 whileHover={{ y: -6 }}
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center"
             >
-                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-xl">
+                <div className="relative w-full aspect-[10/10] overflow-hidden rounded-xl">
                     <img
                         src={img}
                         alt={title}

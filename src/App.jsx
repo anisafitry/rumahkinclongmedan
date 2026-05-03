@@ -362,7 +362,7 @@ export default function App() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceImageCard
-              img="/services/cleaninglogo.jpeg"
+              img="/services/servicecleaning.jpeg"
               title="Cleaning Service (Kebersihan Interior)"
               intro="Cleaning Service merupakan layanan pembersihan dengan sistem durasi kerja. 
               Layanan ini cocok untuk pekerjaan yang dapat diukur berdasarkan waktu, baik bersifat 
@@ -554,7 +554,7 @@ export default function App() {
             />
 
             <ServiceImageCard
-              img="/services/babatrumput.jpeg"
+              img="/services/servicerumput.jpeg"
               title="Gardening (Perawatan Taman & Lahan)"
               intro="Gardening adalah layanan perawatan taman dan pembersihan lahan yang dilakukan 
               secara detail dan menyeluruh di Kota Medan. Kami memahami bahwa taman yang asri dan 
@@ -624,7 +624,7 @@ export default function App() {
             />
 
             <ServiceImageCard
-              img="/services/torenservies.jpeg"
+              img="/services/servicetoren.jpeg"
               title="Toren Cleaning (Kuras Tangki Air)"
               intro="Toren Cleaning adalah layanan pembersihan toren yang memberikan solusi 
               air bersih demi menjaga kesehatan keluarga Anda. Toren yang jarang dikuras 
@@ -675,7 +675,7 @@ export default function App() {
             />
 
             <ServiceImageCard
-              img="/services/acservice.jpeg"
+              img="/services/serviceac.jpeg"
               title="AC Maintenance (Perawatan AC)"
               intro="AC Maintenance adalah layanan perawatan AC untuk menjaga udara 
               tetap sejuk, bersih, dan sehat. AC yang tidak dirawat secara rutin 
